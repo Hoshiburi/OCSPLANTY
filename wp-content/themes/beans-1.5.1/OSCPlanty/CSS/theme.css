@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+   font-family: 'Syne', sans-serif;
+}
+
+a:hover, a {
+   color: black;
+}
+
+/*Header*/

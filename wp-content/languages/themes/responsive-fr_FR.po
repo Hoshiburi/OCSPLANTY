@@ -1,0 +1,826 @@
+# Translation of Themes - Responsive in French (France)
+# This file is distributed under the same license as the Themes - Responsive package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-04-25 15:23:39+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: fr\n"
+"Project-Id-Version: Themes - Responsive\n"
+
+#. Theme Name of the theme
+#: core/includes/classes/class-responsive-admin-settings.php:92
+#: core/includes/customizer/settings/class-responsive-customizer-notices.php:84
+#, gp-priority: high
+msgid "Responsive"
+msgstr "Responsive"
+
+#: core/includes/customizer/settings/class-responsive-panel.php:59
+msgid "Breadcrumb Options"
+msgstr "Options du fil d’Ariane"
+
+#: admin/class-responsive-plugin-install-helper.php:99
+msgid "Rate  us ★★★★★"
+msgstr "Évaluez-nous ★★★★★"
+
+#: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:184
+msgid "Icon Color"
+msgstr "Couleur de l’icône"
+
+#: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:205
+msgid "Icon Hover Color"
+msgstr "Couleur de l’icône au survol"
+
+#: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:247
+msgid "Icon Background Hover Color"
+msgstr "Couleur d’arrière-plan de l’icône au survol"
+
+#: core/includes/customizer/settings/class-responsive-header-layout-customizer.php:93
+msgid "Header Height"
+msgstr "Hauteur de l’en-tête"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:51
+msgid "Main Menu Settings"
+msgstr "Réglages du menu principal"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:107
+msgid "Mobile Menu Settings"
+msgstr "Réglages du menu Mobile"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:127
+msgid "Mobile Menu Label"
+msgstr "Libellé du menu mobile"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:213
+msgid "Sub Menu Settings"
+msgstr "Réglages du sous-menu"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:229
+msgid "Sub Menu Colors"
+msgstr "Couleurs de sous-menu"
+
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:53
+msgid "Site Title Colors"
+msgstr "Couleurs du titre du site"
+
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:65
+msgid "Site Title Typography"
+msgstr "Typographie du titre du site"
+
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:84
+msgid "Site Tagline Colors"
+msgstr "Couleurs du slogan du site"
+
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:93
+msgid "Site Tagline Typography"
+msgstr "Typographie du slogan du site"
+
+#: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:89
+msgid "Transparent Header Height"
+msgstr "Hauteur d’en-tête transparent"
+
+#: core/includes/customizer/settings/class-responsive-header-widgets-customizer.php:57
+msgid "Add Header Widgets"
+msgstr "Ajouter des widgets d’en-tête"
+
+#: core/includes/customizer/settings/class-responsive-header-layout-customizer.php:55
+msgid "Enable Header Bottom Border"
+msgstr "Activer la bordure inférieure de l’en-tête"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:55
+msgid "Disable Main Menu"
+msgstr "Désactiver le menu principal"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:91
+msgid "CTA Button Text"
+msgstr "Texte du bouton d’appel à l’action"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:95
+msgid "CTA Button Link (URL)"
+msgstr "Lien du bouton appel à l’action (URL)"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:165
+msgid "Main & Mobile Menu Colors"
+msgstr "Couleurs du menu principal et mobile"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-colors-customizer.php:74
+msgid "Product Sorting"
+msgstr "Tri des produits"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-colors-customizer.php:77
+msgid "Sorting Options text Color"
+msgstr "Couleur du texte des options de tri"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-colors-customizer.php:80
+msgid "Sorting Options background Color"
+msgstr "Couleur d’arrière-plan des options de tri"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:162
+msgid "Filter Button Color"
+msgstr "Couleur du bouton de filtre"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:165
+msgid "Filter Button Text Color"
+msgstr "Couleur du texte du bouton de filtre"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:168
+msgid "Filter Button Border Color"
+msgstr "Couleur de la bordure du bouton de filtre"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:171
+msgid "Filter Button Hover Color"
+msgstr "Couleur au survol du bouton de filtre"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:174
+msgid "Filter Button Text Hover Color"
+msgstr "Couleur du texte au survol du bouton de filtre"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:177
+msgid "Filter Button Border Hover Color"
+msgstr "Couleur de la bordure au survol du bouton de filtre"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:80
+msgid "Footer Widgets Alignment"
+msgstr "Alignement des widgets de Pied de page"
+
+#. translators: %s Column number
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:90
+msgid "Area %s Desktop"
+msgstr "Zone %s sur ordinateur"
+
+#. translators: %s Column number
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:95
+msgid "Area %s Tablet"
+msgstr "Zone %s sur tablette"
+
+#. translators: %s Column number
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:100
+msgid "Area %s Mobile"
+msgstr "Zone %s sur mobile"
+
+#: core/includes/widgets/class-responsive-about-me.php:107
+msgid "Choose Image"
+msgstr "Choisir une image"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:68
+msgid "Hide on Tablet"
+msgstr "Masquer sur tablette"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:72
+msgid "Hide on Mobile"
+msgstr "Masquer sur mobile"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:159
+msgid "Hide Copyright on Desktop"
+msgstr "Masquer le copyright sur ordinateur"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:163
+msgid "Hide Copyright on Tablet"
+msgstr "Masquer le copyright sur tablette"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:75
+msgid "Underline"
+msgstr "Souligné"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:76
+msgid "Overline"
+msgstr "Surligner"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:115
+msgid "Stack Mobile Menu"
+msgstr "Empiler le menu sur mobile"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:221
+msgid "Container Top Offset"
+msgstr "Décalage supérieur du conteneur"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:167
+msgid "Hide Copyright on Mobile"
+msgstr "Masquer le copyright sur mobile"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:64
+msgid "Hide on Desktop"
+msgstr "Masquer sur ordinateur"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:181
+#: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:157
+msgid "Hover Menu Background Color"
+msgstr "Couleur d’arrière-plan au survol du menu"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:249
+#: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:181
+msgid "Hover Sub Menu Background Color"
+msgstr "Couleur d’arrière-plan au survol du sous-menu"
+
+#: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:76
+msgid "Disable on Home Page?"
+msgstr "Désactiver sur la page d’accueil ?"
+
+#: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:84
+msgid "Disable on Search?"
+msgstr "Désactiver sur rechercher ?"
+
+#: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:88
+msgid "Disable on Archive?"
+msgstr "Désactiver sur les archives ?"
+
+#: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:92
+msgid "Disable on Single Page?"
+msgstr "Désactiver sur les pages uniquement ?"
+
+#: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:96
+msgid "Disable on Single Post?"
+msgstr "Désactiver sur la publication unique ?"
+
+#: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:104
+msgid "Disable on 404 Page?"
+msgstr "Désactiver sur la page 404 ?"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:71
+msgid "Menu Item Hover Style"
+msgstr "Style de l’élément de menu au survol"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:245
+#: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:177
+msgid "Active Sub Menu Background Color"
+msgstr "Activer la couleur de l’arrière-plan du sous-menu"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:74
+msgid "Zoom In"
+msgstr "Zoom avant"
+
+#: admin/admin-functions.php:75
+msgid "Thank You for installing Responsive"
+msgstr "Merci d’avoir installé Responsive"
+
+#: core/includes/classes/class-responsive-walker-page.php:98
+msgid "Show sub menu"
+msgstr "Afficher le sous-menu"
+
+#: core/includes/compatibility/woocommerce/class-responsive-woocommerce.php:438
+msgid "Close off canvas panel"
+msgstr "Fermer le panneau hors champ"
+
+#: core/includes/compatibility/woocommerce/class-responsive-woocommerce.php:504
+msgid "Selected : "
+msgstr "Sélectionné : "
+
+#: core/includes/compatibility/woocommerce/class-responsive-woocommerce.php:513
+msgid "Out Of Stock"
+msgstr "En rupture de stock"
+
+#: core/includes/compatibility/woocommerce/class-responsive-woocommerce.php:520
+msgid "Select options"
+msgstr "Choisir les options"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:105
+msgid "Floating Bar"
+msgstr "Barre flottante"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:109
+msgid "Display Floating Bar"
+msgstr "Afficher la barre flottante"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:112
+msgid "Display"
+msgstr "Afficher"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:113
+msgid "Hide"
+msgstr "Masquer"
+
+#: core/includes/widgets/class-responsive-about-me.php:30
+msgid "About Me"
+msgstr "À propos de moi"
+
+#: core/includes/widgets/class-responsive-about-me.php:95
+msgid "Title :"
+msgstr "Titre :"
+
+#: core/includes/widgets/class-responsive-about-me.php:99
+msgid "Image :"
+msgstr "Image :"
+
+#: core/includes/widgets/class-responsive-about-me.php:112
+msgid "Bio :"
+msgstr "Biographie :"
+
+#: core/includes/compatibility/woocommerce/class-responsive-woocommerce.php:465
+msgid "Off-Canvas Filters"
+msgstr "Filtres hors champ"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:151
+msgid "Open Powered By link in new tab"
+msgstr "Ouvrir le lien « Propulsé par » dans un nouvel onglet"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:153
+msgid "Enable Off Canvas Close Button"
+msgstr "Activer le bouton de fermeture hors champ"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:150
+msgid "Off Canvas Filter Button Text"
+msgstr "Texte du bouton du filtre hors champ"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:147
+msgid "Enable Off Canvas Filter"
+msgstr "Activer le filtre hors champ"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:144
+msgid "Off Canvas Filter"
+msgstr "Filtre hors champ"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:133
+msgid "Quantity Input: Background"
+msgstr "Champ de quantité : arrière-plan"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:137
+msgid "Quantity Input Font: Color"
+msgstr "Police du champ de quantité : couleur"
+
+#: core/includes/compatibility/woocommerce/class-responsive-woocommerce.php:467
+msgid "Widgets in this area are used in the Off Canvas Filter. To enable the Off Canvas filter, go to the Product Catalog Option > Layout in customizer and check Enable Off Canvas Filter checkbox under Off Canvas Filter section."
+msgstr "Les widgets de cette zone sont utilisés dans le filtre hors champ. Pour activer le filtre hors champ, aller à l’option Catalogue de produits > Mise en page dans l’outil de personnalisation et cocher la case « Activer le filtre hors champ » sous la section Filtre hors champ."
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:141
+msgid "Quantity Input Border: Color"
+msgstr "Bordure du champ de quantité : couleur"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:156
+msgid "Close Button Color"
+msgstr "Couleur du bouton fermer"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:159
+msgid "Close Button Hover Color"
+msgstr "Couleur du bouton fermer au survol"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:145
+msgid "Add To Cart: Background"
+msgstr "Ajouter au panier : arrière-plan"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:149
+msgid "Add To Cart Hover: Background"
+msgstr "Ajouter au panier au survol : arrière-plan"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:153
+msgid "Add To Cart Font: Color"
+msgstr "Ajouter au panier police : couleur"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:217
+msgid "Container Border"
+msgstr "Bordure du conteneur"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:225
+msgid "Item Divider"
+msgstr "Séparateur d’élément"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:233
+msgid "Container Border Color"
+msgstr "Couleur de bordure du conteneur"
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:237
+msgid "Divider Color"
+msgstr "Couleur du séparateur"
+
+#. translators: %s: tag list
+#: partials/entry/meta.php:117 partials/single/meta.php:109
+msgid "Tagged with %s"
+msgstr "Étiquetté avec %s"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:142
+msgid "If this is empty, site title will be visible as copyright text"
+msgstr "Si vide, le titre du site sera visible sous forme de texte de copyright."
+
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:218
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:173
+msgid "Categories"
+msgstr "Catégories"
+
+#: partials/single/layout.php:52
+msgid "About"
+msgstr "A propos"
+
+#: sidebar-home.php:41
+msgid "This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well."
+msgstr "Ceci est votre premier widget de page d&#39;accueil. Pour le modifier&#44; allez &#224; Apparence > Widgets et choisissez le 6&#232;me widget appel&#233; Accueil Widget 1. Le titre est &#233;galement &#233;ditable via la page d&#39;administration des widgets."
+
+#: sidebar-home.php:69
+msgid "This is your second home widget box. To edit please go to Appearance > Widgets and choose 7th widget from the top in area 7 called Home Widget 2. Title is also manageable from widgets as well."
+msgstr "Ceci est votre second widget de page d&#39;accueil. Pour le modifier&#44; allez &#224; Apparence > Widgets et choisissez le 7&#232;me widget appel&#233; Accueil Widget 2. Le titre est &#233;galement &#233;ditable via la page d&#39;administration des widgets."
+
+#: sidebar-home.php:95
+msgid "This is your third home widget box. To edit please go to Appearance > Widgets and choose 8th widget from the top in area 8 called Home Widget 3. Title is also manageable from widgets as well."
+msgstr "Ceci est votre troisi&#232;me widget de page d&#39;accueil. Pour le modifier&#44; allez &#224; Apparence > Widgets et choisissez le 8&#232;me widget appel&#233; Accueil Widget 3. Le titre est &#233;galement &#233;ditable via la page d&#39;administration des widgets."
+
+#: sidebar-gallery.php:68
+msgid "Camera:"
+msgstr "Appareil:"
+
+#: sidebar-gallery.php:56 sidebar-gallery.php:58 sidebar-gallery.php:61
+msgid "sec"
+msgstr "sec"
+
+#: sidebar-gallery.php:43
+msgid "mm"
+msgstr "mn"
+
+#: sidebar-gallery.php:47
+msgid "ISO:"
+msgstr "Iso:"
+
+#: sidebar-gallery.php:51
+msgid "Shutter:"
+msgstr "Obturateur:"
+
+#: sidebar-gallery.php:38
+msgid "Aperture: f&#47;"
+msgstr "Ouverture : f&#47;"
+
+#: sidebar-gallery.php:43
+msgid "Focal Length:"
+msgstr "Focale:"
+
+#: sidebar-gallery.php:25
+msgid "Image Information"
+msgstr "Information relative &#224; l&#39;image"
+
+#: sidebar-gallery.php:32
+msgid "Full Size:"
+msgstr "Taille réelle:"
+
+#: searchform.php:36
+msgid "Search for:"
+msgstr "Recherche pour:"
+
+#: loop-no-posts.php:43
+msgid "&larr; Home"
+msgstr "&larr; Accueil"
+
+#. translators: %s search term
+#: loop-no-posts.php:26
+msgid "Your search for %s did not match any entries."
+msgstr "Votre recherche pour %s ne retourne aucun contenu."
+
+#. translators: %s search term
+#: loop-no-posts.php:26
+msgid "404 &#8212; Fancy meeting you here!"
+msgstr "404 &#8212; Heureux de vous voir ici &#33;"
+
+#: loop-no-posts.php:32
+msgid "Don&#39;t panic, we&#39;ll get through this together. Let&#39;s explore our options here."
+msgstr "Ne paniquez pas&#44; nous allons r&#233;soudre cela ensemble&#46; Explorons les options possibles ici&#46;"
+
+#. translators: %s: category list
+#. translators: %s posted in categories
+#: core/includes/functions.php:781 image.php:82 partials/entry/meta.php:104
+#: partials/single/meta.php:96
+msgid "Posted in %s"
+msgstr "Publié dans %s"
+
+#: image.php:79
+msgid "Tagged with:"
+msgstr "Tagu&#233;s avec&nbsp;:"
+
+#: image.php:37
+msgid "&#8249; Return to"
+msgstr "&#8249; Retour &#224;"
+
+#: header.php:36
+msgid "&darr; Skip to Main Content"
+msgstr "&darr; passer au contenu principal"
+
+#: core/includes/functions.php:95 functions.php:636
+msgid "Call to Action"
+msgstr "Appel à l'action"
+
+#: core/includes/compatibility/lifterlms/customizer/settings/class-responsive-lifterlms-content-customizer.php:46
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:39
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:39
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:171
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:43
+#: core/includes/customizer/settings/class-responsive-site-layouts-customizer.php:44
+#: core/includes/post-custom-meta.php:163
+msgid "Layout"
+msgstr "Arrangement"
+
+#: core/includes/functions.php:249 partials/footer/footer-menu.php:10
+#: partials/footer/footer-menu.php:11
+msgid "Footer Menu"
+msgstr "Menu du bas de page"
+
+#: core/includes/functions.php:248
+msgid "Header Menu"
+msgstr "Menu d'en-tête"
+
+#: core/includes/functions-sidebar.php:89
+msgid "Area 10 - sidebar-colophon.php, 100% width Footer widgets"
+msgstr "Zone 10 - sidebar-colophon.php, widget pied de page pleine largeur"
+
+#: core/includes/functions-sidebar.php:76
+msgid "Gallery Sidebar"
+msgstr "Barre lat&#233;rale Galerie"
+
+#: core/includes/functions-sidebar.php:88
+msgid "Colophon Widget"
+msgstr "Widget Colophon"
+
+#: core/includes/functions-sidebar.php:65
+msgid "Area 8 - sidebar-home.php - Displays on the Home Page"
+msgstr "Zone 8 - sidebar-home.php - S'affiche sur la page d'accueil"
+
+#: core/includes/functions-sidebar.php:77
+msgid "Area 9 - sidebar-gallery.php - Displays on the page after an image has been clicked in a Gallery"
+msgstr "Zone 9 - sidebar-gallery.php - S'affiche sur la page lorsqu'une image a été sélectionnée dans la galerie"
+
+#: core/includes/functions-sidebar.php:52
+msgid "Home Widget 2"
+msgstr "Accueil Widget 2"
+
+#: core/includes/functions-sidebar.php:64
+msgid "Home Widget 3"
+msgstr "Accueil Widget 3"
+
+#: core/includes/functions-sidebar.php:41
+msgid "Area 6 - sidebar-home.php - Displays on the Home Page"
+msgstr "Zone 6 - sidebar-home.php - S'affiche sur la page d'accueil"
+
+#: core/includes/functions-sidebar.php:53
+msgid "Area 7 - sidebar-home.php - Displays on the Home Page"
+msgstr "Zone 7 - sidebar-home.php - S'affiche sur la page d'accueil"
+
+#: core/includes/functions-sidebar.php:40
+msgid "Home Widget 1"
+msgstr "Accueil Widget 1"
+
+#: core/includes/compatibility/lifterlms/customizer/settings/class-responsive-lifterlms-sidebar.php:64
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:57
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:62
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:57
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:62
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:52
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:57
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:68
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:73
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:84
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:89
+#: core/includes/page-custom-meta.php:37 core/includes/page-custom-meta.php:43
+msgid "Left Sidebar"
+msgstr "Colonne latérale gauche"
+
+#: core/includes/compatibility/lifterlms/customizer/settings/class-responsive-lifterlms-sidebar.php:63
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:56
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:63
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:56
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:63
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:51
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:58
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:67
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:74
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:83
+#: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:90
+#: core/includes/page-custom-meta.php:36 core/includes/page-custom-meta.php:44
+msgid "Right Sidebar"
+msgstr "Colonne latérale droite"
+
+#: core/includes/functions-sidebar.php:29
+msgid "Area 1 - sidebar.php - Displays on Default, Blog, Blog Excerpt page templates"
+msgstr "Zone 1 - encadré.php - S'affiche sur les gabarits Par défaut, Blogue et Extrait de blogue"
+
+#: core/includes/functions-sidebar.php:28
+msgid "Main Sidebar"
+msgstr "Colonne principale"
+
+#: core/includes/functions-extensions.php:373
+msgid "Yelp!"
+msgstr "A l&apos;Aide !"
+
+#: core/includes/functions-extensions.php:375
+msgid "foursquare"
+msgstr "Foursquare "
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:277
+#: core/includes/functions-extensions.php:368
+msgid "YouTube"
+msgstr "YouTube"
+
+#: core/includes/functions-extras.php:205
+msgid "Page %s"
+msgstr "Page %s"
+
+#. translators: %s: view post by
+#. translators: view all posts by author
+#. translators: %s view posts by
+#: core/includes/functions.php:770 partials/entry/meta.php:54
+#: partials/single/meta.php:49
+msgid "View all posts by %s"
+msgstr "Afficher tous les articles par %s"
+
+#. translators: %s is for search query.
+#: loop-header.php:33
+msgid "Search results for: %s"
+msgstr "Résultats de recherche pour %s"
+
+#: core/includes/starter-content.php:35 loop-no-posts.php:42
+msgid "Home"
+msgstr "Accueil"
+
+#: core/includes/customizer/customizer.php:64
+msgid "Custom CSS Styles"
+msgstr "Personnalisation des styles CSS"
+
+#: core/includes/customizer/customizer.php:50
+msgid "CSS Styles"
+msgstr "Styles CSS"
+
+#: core/includes/customizer/settings/class-responsive-footer-scripts-customizer.php:39
+#: core/includes/customizer/settings/class-responsive-header-scripts-customizer.php:39
+msgid "Scripts"
+msgstr "Copie des scripts"
+
+#: core/includes/customizer/settings/class-responsive-header-scripts-customizer.php:54
+msgid "Embeds to header.php"
+msgstr "Intégré dans header.php"
+
+#: core/includes/customizer/settings/class-responsive-footer-scripts-customizer.php:57
+msgid "Embeds to footer.php"
+msgstr "Intégré dans footer.php"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:424
+msgid "Foursquare"
+msgstr "Foursquare "
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:403
+msgid "Yelp"
+msgstr "Yelp"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:382
+#: core/includes/functions-extensions.php:374
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:361
+#: core/includes/functions-extensions.php:369
+msgid "StumbleUpon"
+msgstr "StumbleUpon "
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:340
+#: core/includes/functions-extensions.php:372
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:319
+#: core/includes/functions-extensions.php:371
+msgid "Instagram"
+msgstr "Instagram"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:298
+#: core/includes/functions-extensions.php:370
+msgid "RSS Feed"
+msgstr "Flux RSS"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:256
+#: core/includes/functions-extensions.php:367
+msgid "LinkedIn"
+msgstr "Linkedin"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:235
+#: core/includes/functions-extensions.php:366
+msgid "Facebook"
+msgstr "Facebook"
+
+#: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:214
+#: core/includes/functions-extensions.php:365
+msgid "Twitter"
+msgstr "Twitter"
+
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:320
+msgid "Paste your shortcode, video or image source"
+msgstr "Collez ici votre shortcode, votre html pour l'image ou la video"
+
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:186
+msgid "Content Area"
+msgstr "Zone de contenu"
+
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:316
+msgid "Featured Content"
+msgstr "Contenu mis en avant"
+
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:178
+#: core/includes/functions.php:94 functions.php:633
+msgid "Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like."
+msgstr "Votre titre, sous&#45;titre et contenu sont modifiables via les options du th&#232;me, ainsi que le bouton Action et son lien. L&#39;image sur votre droite peut &#234;tre une image ou m&#234;me une vid&#233;o YouTube si vous le souhaitez."
+
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:167
+msgid "Subheadline"
+msgstr "Sous-Titre"
+
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:224
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:421
+msgid "Call to Action (URL)"
+msgstr "Appel &#224; Action (URL)"
+
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:244
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:401
+msgid "Call to Action (Text)"
+msgstr "Appel &#224; Action (Texte)"
+
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:148
+msgid "Headline"
+msgstr "Headline"
+
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:89
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:103
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:118
+msgid "Enable Custom Front Page"
+msgstr "Activer la page d'accueil personnalisée"
+
+#: core/includes/customizer/settings/class-responsive-home-page-customizer.php:205
+msgid "Disable Call to Action Button?"
+msgstr "Désactiver le bouton Appel à action ?"
+
+#: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:59
+msgid "Disable breadcrumb list?"
+msgstr "Désactiver le fil d'Ariane"
+
+#: admin/class-responsive-plugin-install-helper.php:95
+#: admin/class-responsive-plugin-install-helper.php:104
+#: admin/class-responsive-plugin-install-helper.php:149
+msgid "Activate"
+msgstr "Activer"
+
+#: core/includes/post-custom-meta.php:138
+msgid "Sidebar/Content"
+msgstr "Barre laterale/Contenu"
+
+#. Template Name of the theme
+#: core/includes/post-custom-meta.php:139
+msgid "Full Width Page (no sidebar)"
+msgstr "Pleine Largeur (sans Barre laterale)"
+
+#: core/includes/post-custom-meta.php:137
+msgid "Content/Sidebar"
+msgstr "Contenu de la barre laterale"
+
+#: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:124
+#: core/includes/customizer/controls/typography/class-responsive-customizer-typography-control.php:71
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:143
+#: core/includes/customizer/settings/class-responsive-page-content-customizer.php:96
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:98
+#: core/includes/customizer/settings/class-responsive-typography-customizer.php:429
+#: core/includes/customizer/settings/class-responsive-typography-customizer.php:462
+#: core/includes/customizer/settings/class-responsive-typography-customizer.php:468
+#: core/includes/customizer/settings/class-responsive-typography-customizer.php:544
+#: core/includes/page-custom-meta.php:35 core/includes/page-custom-meta.php:42
+#: core/includes/page-custom-meta.php:73 core/includes/page-custom-meta.php:102
+#: core/includes/post-custom-meta.php:136
+msgid "Default"
+msgstr "Valeur par défaut"
+
+#: comments.php:112
+msgid "Website"
+msgstr "Site web"
+
+#: comments.php:110
+msgid "E-mail"
+msgstr "E-mail"
+
+#: comments.php:108
+msgid "Name"
+msgstr "Nom"
+
+#: comments.php:89
+msgid "Pings&#47;Trackbacks"
+msgstr "Pings&#47;Trackback"
+
+#: comments.php:64 comments.php:77
+msgid "Newer comments &#8250;"
+msgstr "récent commentaire  &#8250;"
+
+#: comments.php:62 comments.php:75
+msgid "&#8249; Older comments"
+msgstr "&#8249; commentaire Older"
+
+#: loop-nav.php:29
+msgid "Newer posts &#8250;"
+msgstr "Articles plus r&#233;cents &#8250;"
+
+#: core/includes/functions-extras.php:133 gutenberg-fullwidth.php:46
+#: image.php:59 partials/page/content.php:15
+msgid "Read more &#8250;"
+msgstr "Lire la suite &#8250;"
+
+#: comments.php:31
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Cet article est protégé par un mot de passe. Saisissez le mot de passe pour lire les commentaires."
+
+#: loop-nav.php:28
+msgid "&#8249; Older posts"
+msgstr "&#8249; Articles plus anciens"
+
+#: gutenberg-fullwidth.php:49 image.php:63 partials/entry/layout.php:56
+#: partials/page/layout.php:45 partials/single/content.php:38
+#: partials/single/layout.php:61
+msgid "Pages:"
+msgstr "Pages&nbsp;:"
