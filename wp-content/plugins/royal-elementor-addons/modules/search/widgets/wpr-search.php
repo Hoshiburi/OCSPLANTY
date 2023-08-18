@@ -1227,7 +1227,7 @@ class Wpr_Search extends Widget_Base {
 			'Custom Search Query - Only Posts or Pages',
 			'Custom Search Query - Only Custom Post Types (Expert)',
 			'More than 2 Results in Ajax Search',
-			'Category Filter (Pro)',
+			'Enable Category Filter (Pro)',
 			'Ajax Search Results Pagination (Load More)'
 		] );
 
@@ -1484,7 +1484,7 @@ class Wpr_Search extends Widget_Base {
 				'selectors' => [
 					'{{WRAPPER}} .wpr-search-form-input' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					'{{WRAPPER}} .wpr-category-select-wrap::before' => 'right: {{RIGHT}}{{UNIT}};',
-					'{{WRAPPER}} .wpr-category-select' => 'padding-left: {{LEFT}}{{UNIT}};'
+					'{{WRAPPER}} .wpr-category-select' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
 				],
 			]
 		);
@@ -1620,7 +1620,7 @@ class Wpr_Search extends Widget_Base {
 				'range' => [
 					'px' => [
 						'min' => 0,
-						'max' => 200,
+						'max' => 25,
 					],
 				],
 				'default' => [

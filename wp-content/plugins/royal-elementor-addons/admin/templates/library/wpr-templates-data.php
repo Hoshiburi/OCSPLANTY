@@ -16,7 +16,7 @@ class WPR_Templates_Data {
 		return [
 			'grocery-store' => [
 				'v1' => [
-					'name' => 'Grocery Store',
+					'name' => 'Grocery Store - Shop',
 					'pages' => 'home,shop,single-product,my-account,about,contact,',
 					'plugins' => '{"woocommerce":'. $is_woo_active .'}',
 					'tags' => 'grocery store shop shopping woo-commerce woocommerce estore ecommerce product online eshopping market reseller ecommerce shop organic food natural',
@@ -28,12 +28,54 @@ class WPR_Templates_Data {
 					'priority' => 4,
 				],
 			],
+			'landing-page-ebook' => [
+				'v1' => [
+					'name' => 'Landing Page - Ebook',
+					'pages' => 'home,featured-books,benefits,authors,blog,single-blog,',
+					'plugins' => '{}',
+					'tags' => 'free ebook e-book e book single page landing page one page onepage landingpage authors books marketing promotion',
+					'theme-builder' => true,
+					'woo-builder' => false,
+					'off-canvas' => true,
+					'price' => $is_pro_active ? 'free' : 'free',
+					'label' => 'new',
+					'priority' => 50,
+				],
+			],
+			'landing-page-startup' => [
+				'v1' => [
+					'name' => 'Landing Page - Startup',
+					'pages' => 'home,features,metrics,blog,single-blog,',
+					'plugins' => '{}',
+					'tags' => 'free digital product single-page landing page one page onepage landingpage agency digital app business corporate creative lead capture marketing startup',
+					'theme-builder' => true,
+					'woo-builder' => false,
+					'off-canvas' => true,
+					'price' => $is_pro_active ? 'free' : 'free',
+					'label' => 'new',
+					'priority' => 51,
+				],
+			],
+			'landing-page-saas' => [
+				'v1' => [
+					'name' => 'Landing Page - SAAS',
+					'pages' => 'home,features,collaboration,solutions,',
+					'plugins' => '{}',
+					'tags' => 'free digital product single-page landing page one page onepage landingpage digital app business corporate creative startup php script saas php code',
+					'theme-builder' => true,
+					'woo-builder' => false,
+					'off-canvas' => true,
+					'price' => $is_pro_active ? 'free' : 'free',
+					'label' => 'new',
+					'priority' => 50,
+				],
+			],
 			'landing-page-business' => [
 				'v1' => [
 					'name' => 'Landing Page - Business',
 					'pages' => 'home,business-plan,insight,features,blog,single-blog,',
 					'plugins' => '{}',
-					'tags' => 'free digital product single-page landing page one page onepage landingpage agency digital app business corporate creative lead capture marketing startup ',
+					'tags' => 'free digital product single-page landing page one page onepage landingpage agency digital app business corporate creative lead capture marketing startup',
 					'theme-builder' => true,
 					'woo-builder' => false,
 					'off-canvas' => true,
@@ -47,7 +89,7 @@ class WPR_Templates_Data {
 					'name' => 'Landing Page - Digital Product',
 					'pages' => 'home,features,analytics,benefits,blog,',
 					'plugins' => '{}',
-					'tags' => 'free digital product single-page landing page one page onepage landingpage agency digital app business corporate creative lead capture marketing startup ',
+					'tags' => 'free digital product single-page landing page one page onepage landingpage agency digital app business corporate creative lead capture marketing startup',
 					'theme-builder' => true,
 					'woo-builder' => false,
 					'off-canvas' => true,
@@ -56,12 +98,26 @@ class WPR_Templates_Data {
 					'priority' => 5,
 				],
 			],
+			'landing-page-mobileapp' => [
+				'v1' => [
+					'name' => 'Landing Page - Mobile App',
+					'pages' => 'product,features,security,solutions,',
+					'plugins' => '{}',
+					'tags' => 'digital free mobile app product landing page one page onepage landingpage digital app solutions connect mobile app app website android ios iphone saas web appilication',
+					'theme-builder' => true,
+					'woo-builder' => false,
+					'off-canvas' => true,
+					'price' => $is_pro_active ? 'free' : 'free',
+					'label' => 'new',
+					'priority' => 51,
+				],
+			],
 			'furniture-shop' => [
 				'v1' => [
 					'name' => 'Furniture Shop',
 					'pages' => 'home,shop-v1,shop-v2,single-product,my-account,about,contact,',
 					'plugins' => '{"woocommerce":'. $is_woo_active .'}',
-					'tags' => 'shop shopping woo-commerce woocommerce estore ecommerce product online furniture home office eshopping market reseller ecommerce shop ',
+					'tags' => 'shop shopping woo-commerce woocommerce estore ecommerce product online furniture home office eshopping market reseller ecommerce shop',
 					'theme-builder' => false,
 					'woo-builder' => true,
 					'off-canvas' => true,
@@ -73,7 +129,7 @@ class WPR_Templates_Data {
 			],
 			'ecommerce' => [
 				'v1' => [
-					'name' => 'Ecommerce',
+					'name' => 'Ecommerce - Shop',
 					'pages' => 'home,shop,single-product,blog,minicart,about,contact,',
 					'plugins' => '{"woocommerce":'. $is_woo_active .'}',
 					'tags' => 'shop shopping woo-commerce woocommerce estore store ecommerce product ecommerce shop online boutique clothes eshopping fashion designer market reseller digital purchases',
@@ -88,10 +144,10 @@ class WPR_Templates_Data {
 			],
 			'estore' => [
 				'v1' => [
-					'name' => 'Electronic Store',
+					'name' => 'Electronic Store - Shop',
 					'pages' => 'home,shop,single-product,blog,faq,about,contact,',
 					'plugins' => '{"woocommerce":'. $is_woo_active .'}',
-					'tags' => 'shop shopping woo-commerce woocommerce estore ecommerce product online market reseller ecommerce shop gadget iphone phone electronic ',
+					'tags' => 'shop shopping woo-commerce woocommerce estore ecommerce product online market reseller ecommerce shop gadget iphone phone electronic',
 					'theme-builder' => true,
 					'woo-builder' => true,
 					'off-canvas' => false,
@@ -103,10 +159,10 @@ class WPR_Templates_Data {
 			],
 			'woo-food' => [
 				'v1' => [
-					'name' => 'Food Delivery',
+					'name' => 'Food Delivery - Shop',
 					'pages' => 'home,home-v2,food,single-product,about,contact,faq,blog,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .',"woocommerce":'. $is_woo_active .'}',
-					'tags' => 'shop woo-commerce woocommerce ecommerce product online eshopping market ecommerce shop food delivery restaurant fast food pizzeria burger recipes cooking pizza restaurant snack',
+					'tags' => 'menu shop woo-commerce woocommerce ecommerce product online eshopping market ecommerce shop food delivery restaurant fast food pizzeria burger recipes cooking pizza restaurant snack',
 					'theme-builder' => true,
 					'woo-builder' => true,
 					'off-canvas' => false,
@@ -117,7 +173,7 @@ class WPR_Templates_Data {
 			],
 			'fashion' => [
 				'v1' => [
-					'name' => 'Fashion 1',
+					'name' => 'Fashion 1 - Shop',
 					'pages' => 'home,shop-v1,shop-v2,single-product,blog,my-account,about,faq,contact,',
 					'plugins' => '{"woocommerce":'. $is_woo_active .'}',
 					'tags' => 'shop shopping woo-commerce woocommerce estore ecommerce product ecommerce shop online boutique clothes eshopping fashion designer market reseller digital purchases',
@@ -130,7 +186,7 @@ class WPR_Templates_Data {
 					'priority' => 5,
 				],
 				'v2' => [
-					'name' => 'Fashion 2 ',
+					'name' => 'Fashion 2 - Shop',
 					'pages' => 'home,home-v2,home-v3,shop-v1,shop-v2,shop-v3,megamenu,ajaxsearch,compare,wishlist,minicart,single-product,blog,about-v1,about-v2,contact-v1,contact-v2,contact-v3,',
 					'plugins' => '{"woocommerce":'. $is_woo_active .'}',
 					'tags' => 'shop shopping woo-commerce woocommerce estore store ecommerce product ecommerce shop online boutique clothes eshopping fashion designer market reseller digital purchases',
@@ -159,7 +215,7 @@ class WPR_Templates_Data {
 			],
 			'woo-auto-parts' => [
 				'v1' => [
-					'name' => 'Auto Parts Store',
+					'name' => 'Auto Parts Store - Car',
 					'pages' => 'home,shop,single-product,compare,mini-cart,about,contact,blog,mega-menu',
 					'plugins' => '{"woocommerce":'. $is_woo_active .'}',
 					'tags' => 'auto parts store shop shopping woo-commerce woocommerce estore ecommerce product online eshopping market car parts automobile accessories bike parts car repair tire shop tools shop phone parts',
@@ -174,7 +230,7 @@ class WPR_Templates_Data {
 			],
 			'personal-blog' => [
 				'v1' => [
-					'name' => 'Personal Blog',
+					'name' => 'Personal Blog v1',
 					'pages' => 'home,home-v1,home-v2,home-v3,lifestyle,about,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
 					'tags' => 'blog blogger posts personal blog lifestyle blogger theme builder grid slider news',
@@ -186,7 +242,7 @@ class WPR_Templates_Data {
 					'priority' => 20,
 				],
 				'v2' => [
-					'name' => 'Personal Blog',
+					'name' => 'Personal Blog v2',
 					'pages' => 'home,single,category,about,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
 					'tags' => 'free blog blogger posts personal blog lifestyle blogger theme builder grid slider news',
@@ -198,7 +254,7 @@ class WPR_Templates_Data {
 					'priority' => 4,
 				],
 				'v3' => [
-					'name' => 'Personal Blog',
+					'name' => 'Personal Blog v3',
 					'pages' => 'home,blog-v1,blog-v2,blog-v3,instagram feed,ajax search,about,contact,single post,',
 					'plugins' => '{}',
 					'tags' => 'free blog blogger posts personal blog lifestyle blogger theme builder grid slider news magazine',
@@ -243,7 +299,7 @@ class WPR_Templates_Data {
 					'name' => 'Food Blog',
 					'pages' => 'home,home-v1,home-v2,home-v3,category,about,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
-					'tags' => 'food blog posts food blogger theme builder recipes cooking grid slider',
+					'tags' => 'menu food blog posts food blogger theme builder recipes cooking grid slider',
 					'theme-builder' => true,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -254,7 +310,7 @@ class WPR_Templates_Data {
 			],
 			'magazine-blog' => [
 				'v1' => [
-					'name' => 'Magazine Blog',
+					'name' => 'Magazine Blog v1',
 					'pages' => 'home,home-v1,home-v2,category,about,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
 					'tags' => 'blogger blog posts content news newspaper journal magazine business blog publishing theme builder sports grid slider',
@@ -266,7 +322,7 @@ class WPR_Templates_Data {
 					'priority' => 6,
 				],
 				'v2' => [
-					'name' => 'Magazine Blog',
+					'name' => 'Magazine Blog v2',
 					'pages' => 'home,home-v1,home-v2,category,about,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
 					'tags' => 'blogger blog posts content news newspaper journal magazine business blog publishing theme builder sports grid slider',
@@ -278,7 +334,7 @@ class WPR_Templates_Data {
 					'priority' => 50,
 				],
 				'v3' => [
-					'name' => 'Magazine Blog',
+					'name' => 'Magazine Blog v3',
 					'pages' => 'home,category,about,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
 					'tags' => 'blogger blog posts content news newspaper journal magazine business blog publishing theme builder sports grid slider',
@@ -306,7 +362,7 @@ class WPR_Templates_Data {
 			],
 			'nature' => [
 				'v1' => [
-					'name' => 'nature',
+					'name' => 'nature - travel',
 					'pages' => 'home,about,services,projects,contact,',
 					'plugins' => '{}',
 					'tags' => 'free nature influencer travel content slider tourism influencers creator travel forest slider generic multipurpose national-park nature-park sanctuary wilderness hitchhiking mountain river lakes outdoors',
@@ -348,10 +404,10 @@ class WPR_Templates_Data {
 			],
 			'digital-marketing-agency' => [
 				'v1' => [
-					'name' => 'Digital Marketing Agency',
+					'name' => 'Digital Marketing Agency v1',
 					'pages' => 'home,seo,branding,marketing,social,blog,about,contact,',
 					'plugins' => '{}',
-					'tags' => 'digital agency company corporate digital services office agency web digital marketing seo social media branding landing page',
+					'tags' => 'digital agency company corporate digital services office agency web digital marketing seo social media branding',
 					'theme-builder' => true,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -360,10 +416,10 @@ class WPR_Templates_Data {
 					'priority' => 3,
 				],
 				'v2' => [
-					'name' => 'Digital Marketing Agency',
+					'name' => 'Digital Marketing Agency v2',
 					'pages' => 'home,seo,social,web,email,shop,blog,about,team,contact,pricing1,pricing2,pricing3,casestudy,',
 					'plugins' => '{"woocommerce":'. $is_woo_active .'}',
-					'tags' => 'digital agency company corporate digital services office agency web digital marketing seo social media branding landing page',
+					'tags' => 'digital agency company corporate digital services office agency web digital marketing seo social media branding',
 					'theme-builder' => true,
 					'woo-builder' => true,
 					'off-canvas' => false,
@@ -372,10 +428,10 @@ class WPR_Templates_Data {
 					'priority' => 2,
 				],
 				'v3' => [
-					'name' => 'Digital Marketing Agency',
+					'name' => 'Digital Marketing Agency v3',
 					'pages' => 'home,services,portfolio,blog,about,contact,',
 					'plugins' => '{}',
-					'tags' => 'digital agency company corporate digital services office agency web digital marketing seo social media branding landing page',
+					'tags' => 'digital agency company corporate digital services office agency web digital marketing seo social media branding',
 					'theme-builder' => true,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -386,10 +442,10 @@ class WPR_Templates_Data {
 			],
 			'digital-seo-marketing-agency' => [
 				'v1' => [
-					'name' => 'Digital SEO Marketing Agency',
+					'name' => 'Digital SEO Marketing Agency v1',
 					'pages' => 'home,about,services,team,projects,details,pricing,blog,faq,contact,',
 					'plugins' => '{}',
-					'tags' => 'digital agency company corporate digital services office agency web digital marketing seo social media branding dark black digital seo agency landing page',
+					'tags' => 'digital agency company corporate digital services office agency web digital marketing seo social media branding dark black digital seo agency',
 					'theme-builder' => true,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -400,10 +456,10 @@ class WPR_Templates_Data {
 			],
 			'digital-agency-dark' => [
 				'v1' => [
-					'name' => 'Digital Agency Dark',
+					'name' => 'Digital Agency Dark v1',
 					'pages' => 'home,about,services,team,portfolio,blog,contact,',
 					'plugins' => '{"media-library-assistant":'. $is_mla_active .'}',
-					'tags' => 'digital agency company corporate digital services office agency web digital marketing seo social media branding dark black landing page',
+					'tags' => 'digital agency company corporate digital services office agency web digital marketing seo social media branding dark black',
 					'theme-builder' => true,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -442,7 +498,7 @@ class WPR_Templates_Data {
 			],
 			'portfolio' => [
 				'v1' => [
-					'name' => 'Portfolio/CV',
+					'name' => 'Portfolio/CV v1',
 					'pages' => 'home,about,portfolio,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
 					'tags' => 'free portfolio personal cv designer ux artist artwork personal resume photographer grid clean creative freelanceer vcard',
@@ -454,7 +510,7 @@ class WPR_Templates_Data {
 					'priority' => 81,
 				],
 			   'v2' => [
-					'name' => 'Portfolio/CV - One Page',
+					'name' => 'Portfolio/CV - One Page v2',
 					'pages' => 'home,single project,',
 					'plugins' => '{}',
 					'tags' => 'free portfolio personal cv designer ux artist artwork personal resume photographer grid one page onepage clean creative freelanceer vcard',
@@ -471,7 +527,7 @@ class WPR_Templates_Data {
 					'name' => 'NFT',
 					'pages' => 'home,about,blog,roadmap,team,nft,faq,comingsoon,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
-					'tags' => 'portfolio blockchain nft crypto collection minting listing metavers digital currency art landing page',
+					'tags' => 'portfolio blockchain nft crypto collection minting listing metavers digital currency art',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -485,7 +541,7 @@ class WPR_Templates_Data {
 					'name' => 'Pizza Restaurant',
 					'pages' => 'home,menu,about,offer,gallery,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
-					'tags' => 'pizza italian restaurant food slider pasta fastfood fast food recipes cooking slider',
+					'tags' => 'pizza italian restaurant food slider pasta fastfood fast food recipes cooking slider menu',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -499,7 +555,7 @@ class WPR_Templates_Data {
 					'name' => 'Business Consulting',
 					'pages' => 'home,about,blog,contact,services,contact,faq,history,pricing,team',
 					'plugins' => '{}',
-					'tags' => 'cryptocurrency crypto blockchain advisor investment corporate finance finances financial penny grow financial consulting financial advisors fintech fintech startup business consultancy firm business consulting company financial consulting consultancy services sales marketing technology consulting business coach business consultant business guide mentor motivational speaker landing page',
+					'tags' => 'cryptocurrency crypto blockchain advisor investment corporate finance finances financial penny grow financial consulting financial advisors fintech fintech startup business consultancy firm business consulting company financial consulting consultancy services sales marketing technology consulting business coach business consultant business guide mentor motivational speaker',
 					'theme-builder' => true,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -513,7 +569,7 @@ class WPR_Templates_Data {
 					'name' => 'Fintech Startup Website',
 					'pages' => 'home,about,services,blog,contact,',
 					'plugins' => '{}',
-					'tags' => 'free cryptocurrency crypto blockchain advisor investment corporate finance finances financial penny grow financial consulting financial advisors fintech fintech startup business consultancy firm business consulting company financial consulting consultancy services sales technology consulting business coach business consultant business guide mentor motivational speaker landing page',
+					'tags' => 'free cryptocurrency crypto blockchain advisor investment corporate finance finances financial penny grow financial consulting financial advisors fintech fintech startup business consultancy firm business consulting company financial consulting consultancy services sales technology consulting business coach business consultant business guide mentor motivational speaker',
 					'theme-builder' => true,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -597,7 +653,7 @@ class WPR_Templates_Data {
 					'name' => 'Photographer Portfolio Dark',
 					'pages' => 'home,about,services,portfolio,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .', "media-library-assistant":'. $is_mla_active .'}',
-					'tags' => 'portfolio personal cv designer ux artist artwork personal resume camera fashion lens modelling photographer photography videography wedding shoot grid ',
+					'tags' => 'portfolio personal cv designer ux artist artwork personal resume camera fashion lens modelling photographer photography videography wedding shoot grid',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -609,7 +665,7 @@ class WPR_Templates_Data {
 					'name' => 'Photographer Portfolio Light',
 					'pages' => 'home,about,services,portfolio,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .', "media-library-assistant":'. $is_mla_active .'}',
-					'tags' => 'portfolio personal cv designer ux artist artwork personal resume camera fashion lens modelling photographer photography videography wedding shoot grid ',
+					'tags' => 'portfolio personal cv designer ux artist artwork personal resume camera fashion lens modelling photographer photography videography wedding shoot grid',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -623,7 +679,7 @@ class WPR_Templates_Data {
 					'name' => 'Cryptocurrency',
 					'pages' => 'home,about,services,token,pricing,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
-					'tags' => 'cryptocurrency bitcoin ethereum etherium blockchain protection nft coin corporate crypto dark startup token digital landing page',
+					'tags' => 'cryptocurrency bitcoin ethereum etherium blockchain protection nft coin corporate crypto dark startup token digital',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -651,7 +707,7 @@ class WPR_Templates_Data {
 					'name' => 'Lawyer',
 					'pages' => 'home,practice,faq,reviews,attorney,contact,',
 					'plugins' => '{}',
-					'tags' => 'free lawyers criminal defence lawyer firm divorce lawyer family lawyer law legal firm ',
+					'tags' => 'free lawyers criminal defence lawyer firm divorce lawyer family lawyer law legal firm',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -676,10 +732,10 @@ class WPR_Templates_Data {
 			],
 			'digitalagency' => [
 				'v1' => [
-					'name' => 'Digital Agency',
+					'name' => 'Digital Agency v1',
 					'pages' => 'home,about,services,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
-					'tags' => 'digital agency company corporate digital services office agency web marketing landing page',
+					'tags' => 'digital agency company corporate digital services office agency web marketing digital marketing',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -688,10 +744,10 @@ class WPR_Templates_Data {
 					'priority' => 190,
 				],
 				'v2' => [
-					'name' => 'Digital Agency',
+					'name' => 'Digital Agency v2',
 					'pages' => 'home,about,services,pricing,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
-					'tags' => 'digital agency company corporate digital services office agency web marketing slider landing page',
+					'tags' => 'digital agency company corporate digital services office agency web marketing slider digital marketing',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -700,10 +756,10 @@ class WPR_Templates_Data {
 					'priority' => 200,
 				],
 				'v3' => [
-					'name' => 'Digital Agency',
+					'name' => 'Digital Agency v3',
 					'pages' => 'home,about,blog,single-blog,contact,',
 					'plugins' => '{}',
-					'tags' => 'free digital agency company corporate digital services office agency web marketing slider landing page',
+					'tags' => 'free digital agency company corporate digital services office agency web marketing slider digital marketing',
 					'theme-builder' => true,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -717,7 +773,7 @@ class WPR_Templates_Data {
 					'name' => 'Drone Project',
 					'pages' => 'home,about,gallery,services,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
-					'tags' => 'free drone photography aerial photo ',
+					'tags' => 'free drone photography aerial photo',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -728,7 +784,7 @@ class WPR_Templates_Data {
 			],
 			'architecture' => [
 				'v1' => [
-					'name' => 'Architecture 1',
+					'name' => 'Architecture v1',
 					'pages' => 'home,about,portfolio,services,faq,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
 					'tags' => 'architecture company slider interior design designer landscaping office zoning building slider architecture commercial construction creative decorations exterior designer home decorations interior designer landscape design modern residential',
@@ -740,7 +796,7 @@ class WPR_Templates_Data {
 					'priority' => 220,
 				],
 				'v2' => [
-					'name' => 'Architecture 2',
+					'name' => 'Architecture v2',
 					'pages' => 'home,about,projects,services,team,pricing,faq,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
 					'tags' => 'architecture company slider interior design designer landscaping office zoning building slider architecture commercial construction creative decorations exterior designer home decorations interior designer landscape design modern residential',
@@ -757,7 +813,7 @@ class WPR_Templates_Data {
 					'name' => 'Food Delivery',
 					'pages' => 'home,services,blog,faq,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
-					'tags' => 'fooddelivery fast food chain restaurant service italian pasta pizza pizzeria burger recipes cooking',
+					'tags' => 'fooddelivery fast food chain restaurant service italian pasta pizza pizzeria burger recipes cooking menu',
 					'theme-builder' => true,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -768,7 +824,7 @@ class WPR_Templates_Data {
 			],
 			'construction' => [
 				'v1' => [
-					'name' => 'Construction v2',
+					'name' => 'Construction v1',
 					'pages' => 'home,about,services,projects,pricing,contact,faq,',
 					'plugins' => '{}',
 					'tags' => 'free construction architecture company interior office',
@@ -778,6 +834,18 @@ class WPR_Templates_Data {
 					'price' => $is_pro_active ? 'free' : 'free',
 					'label' => '',
 					'priority' => 240,
+				],
+				'v2' => [
+					'name' => 'Construction v2',
+					'pages' => 'home,about,services,projects,contact,',
+					'plugins' => '{"media-library-assistant":'. $is_mla_active .'}',
+					'tags' => 'construction architecture company building consultation',
+					'theme-builder' => true,
+					'woo-builder' => false,
+					'off-canvas' => true,
+					'price' => $is_pro_active ? 'free' : 'pro',
+					'label' => 'New',
+					'priority' => 244,
 				],
 				'v3' => [
 					'name' => 'Construction v3',
@@ -797,7 +865,7 @@ class WPR_Templates_Data {
 					'name' => 'IT Tech v1',
 					'pages' => 'home,about,services,pricing,faq,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
-					'tags' => 'ittech advanced technology it technique computer windows technician digital landing page',
+					'tags' => 'ittech advanced technology it technique computer windows technician digital',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -809,7 +877,7 @@ class WPR_Templates_Data {
 					'name' => 'IT Tech v2',
 					'pages' => 'home,about,services,pricing,faq,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
-					'tags' => 'ittech advanced technology it technique computer windows technician digital landing page',
+					'tags' => 'ittech advanced technology it technique computer windows technician digital',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -820,7 +888,7 @@ class WPR_Templates_Data {
 			],
 			'carwash' => [
 				'v1' => [
-					'name' => 'Carwash',
+					'name' => 'Car Wash',
 					'pages' => 'home,about,services,contact,',
 					'plugins' => '{}',
 					'tags' => 'free vehicle car wash cleaning painting service maintenance care bike motorcycle detailing auto',
@@ -829,12 +897,12 @@ class WPR_Templates_Data {
 					'off-canvas' => false,
 					'price' => $is_pro_active ? 'free' : 'free',
 					'label' => '',
-					'priority' => 252,
+					'priority' => 4,
 				],
 			],
 			'realestate' => [
 				'v1' => [
-					'name' => 'Real Estate',
+					'name' => 'Real Estate v1',
 					'pages' => 'home,properties,about,services,faq,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
 					'tags' => 'real estate agency company property rentals estate sales developers',
@@ -846,7 +914,7 @@ class WPR_Templates_Data {
 					'priority' => 271,
 				],
 				'v2' => [
-					'name' => 'Real Estate',
+					'name' => 'Real Estate v2',
 					'pages' => 'home,about,services,property,details,agents,blog,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
 					'tags' => 'real estate agency company property rentals estate sales developers',
@@ -863,7 +931,7 @@ class WPR_Templates_Data {
 					'name' => 'Restaurant',
 					'pages' => 'home,about,gallery,menu,contact,',
 					'plugins' => '{}',
-					'tags' => 'free restaurant fastfood slider hotel italian pizza pizzeria pasta dinner fast food wine recipe recipes cooking slider',
+					'tags' => 'free restaurant fastfood slider hotel italian pizza pizzeria pasta dinner fast food wine recipe recipes cooking slider menu',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -877,7 +945,7 @@ class WPR_Templates_Data {
 					'name' => 'Wine Bar & Restaurant',
 					'pages' => 'home,story,wines,dishes,events,contact,',
 					'plugins' => '{"contact-form-7":'. $is_cf7_active .'}',
-					'tags' => 'free wine bar winery beer drink alcohol pub events dish wines italian restaurant food slider recipes cooking recipes slider',
+					'tags' => 'free wine bar winery beer drink alcohol pub events dish wines italian restaurant food slider recipes cooking recipes slider menu',
 					'theme-builder' => false,
 					'woo-builder' => false,
 					'off-canvas' => false,
@@ -956,7 +1024,7 @@ class WPR_Templates_Data {
 				'price' => $is_pro_active ? 'free' : 'pro',
 			],
 			'construction-v3' => [
-				'name' => 'Construction',
+				'name' => 'Construction v3',
 				'pages' => ['home','home-v2','about','services','shop','blog','gallery','contact'],
 				'preview' => ['home','home-v2','about','services','shop','blog','gallery','contact'],
 				'price' => $is_pro_active ? 'free' : 'pro',
@@ -1172,10 +1240,16 @@ class WPR_Templates_Data {
 				'price' => $is_pro_active ? 'free' : 'pro',
 			],
 			'construction-v1' => [
-				'name' => 'Construction',
+				'name' => 'Construction v1',
 				'pages' => ['home','about','services','projects','pricing','contact','faq'],
 				'preview' => ['home','about','services','projects','pricing','contact','faq'],
 				'price' => $is_pro_active ? 'free' : 'free',
+			],
+			'construction-v2' => [
+				'name' => 'Construction v2',
+				'pages' => ['home','about','services','projects','contact'],
+				'preview' => ['home','about','services','projects','contact'],
+				'price' => $is_pro_active ? 'free' : 'pro',
 			],
 			'photographer-v1' => [
 				'name' => 'Photographer Dark',

@@ -8,4 +8,88 @@ a:hover, a {
    color: black;
 }
 
+
+/* formulaire */
+
+.both_forms {
+   display: flex;
+}
+
+.form_livraison,
+.form_infos {
+   flex: 1;
+   margin-right: 10px;
+}
+
+.title_form {
+   font-family: Syne;
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 36px;
+   color: white;
+   }
+   
+.fields {
+   font-family: Syne;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 24px;
+   color: white;
+   }
+   
+.text-area {
+   width: 383px;
+   height: 71px;
+   border-radius: 7px;
+   border:none;
+   margin-top:15px;
+   margin-bottom:15px;
+   font-size: 20px;
+   }
+
+.separator {
+   width: 1px;
+   background-color: #fff; 
+   margin: 0 20px;
+    }
+
+.submit_button{
+   width: 198px;
+   height: 55px;
+   top: 1164px;
+   left: 631px;
+   padding: 9px 57px 9px 56px;
+   border-radius: 5px;
+   background-color: #E0B9B4;
+   font-family: Syne;
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 37px;
+   letter-spacing: 0em;
+   text-align: center;
+   color: white;
+   border: 0;
+   display: block;
+   margin: 0 auto;
+}
+
+.submit_button:hover {
+   background-color: #C02E44;
+}
+
+   /*
+@media (max-width: 1000px) and (min-width: 320px) {
+     .text-area {
+       width: 300px;
+     }
+   }
+   
+@media screen and (min-width: 1000px) and (max-width: 1270px) {
+     .text-area {
+       width: 300px;
+     }
+
 /*Header*/
+
+
+

@@ -1,0 +1,6 @@
+2023-08-17T16:01:13+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans C:\MAMP\htdocs\OCSPlanty\wp-content\plugins\contact-form-7\modules\really-simple-captcha.php à la ligne 8
+
+2023-08-17T16:01:37+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans C:\MAMP\htdocs\OCSPlanty\wp-content\plugins\elementor\includes\controls\slider.php à la ligne 6
+
+2023-08-17T16:01:47+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans C:\MAMP\htdocs\OCSPlanty\wp-content\plugins\royal-elementor-addons\modules\popup-trigger\widgets\wpr-popup-trigger.php à la ligne 14
+
