@@ -1,7 +1,7 @@
 === Royal Elementor Addons and Templates ===
 Contributors: WP Royal, rubeushagrid13, cyberpinky, elementoraddonswpr, ggedenidze1982, wprduke
 Tags: elementor, elementor templates, elementor addons, widgets for elementor, elementor widgets, elementor mega menu, elementor woocommerce builder, theme builder, header footer builder, elementor post grid, elementor product grid, addons for elementor
-Stable tag: 1.3.73
+Stable tag: 1.3.74
 Requires at least: 5.0
 Tested up to: 6.3
 Requires PHP: 5.6
@@ -198,7 +198,8 @@ and other custom branding related settings)
 - [**Portfolio v2**](https://demosites.royal-elementor-addons.com/portfolio-v2/?ref=rea-wpo-pp-details-tab)
 - [**Hotel v1**](https://demosites.royal-elementor-addons.com/hotel-v1/?ref=rea-wpo-pp-details-tab)
 - [**Yoga**](https://demosites.royal-elementor-addons.com/yoga-v1/?ref=rea-wpo-pp-details-tab)
-- [**Digital Seo Marketing Agency**](https://demosites.royal-elementor-addons.com/digital-seo-marketing-agency-v1/?ref=rea-wpo-pp-details-tab)
+- [**Digital Seo Marketing Agency v1**](https://demosites.royal-elementor-addons.com/digital-seo-marketing-agency-v1/?ref=rea-wpo-pp-details-tab)
+- [**Digital Seo Marketing Agency v2**](https://demosites.royal-elementor-addons.com/digital-seo-marketing-agency-v2/?ref=rea-wpo-pp-details-tab)
 - [**Real Estate v2**](https://demosites.royal-elementor-addons.com/realestate-v2/?ref=rea-wpo-pp-details-tab)
 - [**Digital Marketing Agency v3**](https://demosites.royal-elementor-addons.com/digital-marketing-agency-v3/?ref=rea-wpo-pp-details-tab)
 - [**Digital Marketing Agency v2**](https://demosites.royal-elementor-addons.com/digital-marketing-agency-v2/?ref=rea-wpo-pp-details-tab)
@@ -421,6 +422,10 @@ memory_limit 256M or more
 post_max_size 64M
 
 == Changelog ==
+= Royal Elementor Addons v1.3.74 - 2023-08-15 =
+* ADDED: Digital SEO Marketing Agency Elementor Templates Kit - [**Digital SEO Marketing Agency**](https://demosites.royal-elementor-addons.com/digital-seo-marketing-agency-v2/?ref=rea-wpo-pp-details-tab).
+* FIXED: Minor Bugs.
+
 = Royal Elementor Addons v1.3.73 - 2023-08-10 =
 * ADDED: [Advanced Sticky Menu Options](https://prnt.sc/pCVM2ayA_vVV) to create stunning and eye-catching menu effects, check examples (scroll to see menu effects): [Demo 1](https://demosites.royal-elementor-addons.com/fashion-v2/?ref=rea-wpo-pp-details-tab), [Demo 2](https://demosites.royal-elementor-addons.com/digital-marketing-agency-v2/?ref=rea-wpo-pp-details-tab), [Demo 3](https://demosites.royal-elementor-addons.com/personal-blog-v1/?ref=rea-wpo-pp-details-tab), [Demo 4](https://demosites.royal-elementor-addons.com/digital-marketing-agency-v1/?ref=rea-wpo-pp-details-tab), [Demo 5.](https://demosites.royal-elementor-addons.com/construction-v3/?ref=rea-wpo-pp-details-tab)
 * ADDED: New [Woocommerce options](https://prnt.sc/TYc4NIi_qjMF).

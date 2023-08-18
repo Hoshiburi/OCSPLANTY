@@ -1,0 +1,6 @@
+2023-08-18T13:22:49+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans C:\MAMP\htdocs\OCSPlanty\wp-content\plugins\contact-form-7\modules\date.php à la ligne 9
+
+2023-08-18T13:43:04+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans C:\MAMP\htdocs\OCSPlanty\wp-includes\functions.php à la ligne 4550
+
+2023-08-18T13:47:34+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans C:\MAMP\htdocs\OCSPlanty\wp-content\plugins\woocommerce\src\Internal\Admin\Settings.php à la ligne 347
+

@@ -140,6 +140,10 @@ function wpr_register_addons_settings() {
         if ( 'page' !== $key && 'e-landing-page' !== $key ) {
             register_setting( 'wpr-settings', 'wpr_meta_secondary_image_'. $key );
         }
+
+        if ( 'post' !== $key && 'product' !== $key && 'page' !== $key && 'e-landing-page' !== $key ) {
+            register_setting( 'wpr-settings', 'wpr_cpt_ppp_'. $key );
+        }
     }
 
 }
@@ -417,8 +421,18 @@ function wpr_addons_settings_page() {
 
         <?php submit_button( '', 'wpr-options-button' ); ?>
 
+        <div class="wpr-settings-group wpr-settings-navigation">
+            <a href="#woocommerce-tab">WooCommerce</a> / 
+            <?php if ( wpr_fs()->is_plan( 'expert' ) ) : ?>
+                <a href="#cpt-tab">Custom Post Types</a> / 
+            <?php endif; ?>
+            <a href="#metabox-tab">Metabox</a> /  
+            <a href="#integrations-tab">Integrations</a> /  
+            <a href="#lightbox-tab">Lightbox</a>
+        </div>
+
         <div class="wpr-settings-group wpr-settings-group-woo">
-            <h3 class="wpr-settings-group-title"><?php esc_html_e( 'WooCommerce', 'wpr-addons' ); ?></h3>
+            <h3 id="woocommerce-tab" class="wpr-settings-group-title"><?php esc_html_e( 'WooCommerce', 'wpr-addons' ); ?></h3>
             
             <div class="wpr-settings-group-inner">
 
@@ -457,7 +471,7 @@ function wpr_addons_settings_page() {
             
             <div class="wpr-woo-template-info">
                 <div class="wpr-woo-template-title">
-                    <h4>WPR Woo Config</h4>
+                    <h4>Royal Woocommerce Config</h4>
                     <span>Below options work only if this option is enabled</span>
                 </div>
                 <input type="checkbox" name="wpr_override_woo_templates" id="wpr_override_woo_templates" <?php echo checked( get_option('wpr_override_woo_templates', 'on'), 'on', false ); ?>>
@@ -567,11 +581,60 @@ function wpr_addons_settings_page() {
             <?php endif; ?>
             
         </div>
+        
+
+        <?php if ( wpr_fs()->is_plan( 'expert' ) ) : ?>
+        <div class="wpr-settings-group wpr-settings-group-cpt">
+            <h3 id="cpt-tab" class="wpr-settings-group-title"><?php esc_html_e( 'Custom Post Types', 'wpr-addons' ); ?></h3>
+
+            <?php
+                $post_types = Utilities::get_custom_types_of( 'post', false );
+
+                $custom_post_types_exist = false;
+                
+                foreach ( $post_types as $key => $post_type ) {
+                    if ( ! in_array( $key, ['post', 'page', 'attachment', 'product', 'e-landing-page', 'revision', 'nav_menu_item'] ) ) {
+                        // This is a custom post type.
+                        $custom_post_types_exist = true;
+                        break;
+                    }
+                }
+                   
+                if ( $custom_post_types_exist ) {
+                    foreach ( $post_types as $key => $value ) {
+                        if ( 'post' == $key || 'product' == $key || 'page' == $key || 'e-landing-page' === $key ) {
+                            continue;
+                        }
+    
+                        ?>  
+                            <div class="wpr-setting">
+                                <h4>
+                                    <span><?php esc_html_e( $value . ' : Posts Per Page', 'wpr-addons' ); ?></span>
+                                    <br>
+                                </h4>
+    
+                                <input type="text" name="wpr_cpt_ppp_<?php echo $key ?>" id="wpr_cpt_ppp_<?php echo $key ?>" value="<?php echo esc_attr(get_option('wpr_cpt_ppp_'. $key, 10)); ?>">
+                            </div>
+                        <?php
+                    }
+                } else {
+                    echo '<p>No custom post types found.</p>';
+                }
+
+                
+                // do_action('wpr_cpt_settings');
+            ?>
+            
+            <!-- <div class="wpr-settings-group-inner"> -->
+
+            <!-- </div> -->
+        </div>
+        <?php endif; ?>
             
 
         <?php if ( wpr_fs()->can_use_premium_code() ) : ?>
         <div class="wpr-settings-group wpr-settings-group-meta">
-            <h3 class="wpr-settings-group-title"><?php esc_html_e( 'Metabox', 'wpr-addons' ); ?></h3>
+            <h3 id="metabox-tab" class="wpr-settings-group-title"><?php esc_html_e( 'Metabox', 'wpr-addons' ); ?></h3>
 
             <?php
                 $post_types = Utilities::get_custom_types_of( 'post', false );
@@ -600,7 +663,7 @@ function wpr_addons_settings_page() {
         <?php endif; ?>
 
         <div class="wpr-settings-group">
-            <h3 class="wpr-settings-group-title"><?php esc_html_e( 'Integrations', 'wpr-addons' ); ?></h3>
+            <h3 id="integrations-tab" class="wpr-settings-group-title"><?php esc_html_e( 'Integrations', 'wpr-addons' ); ?></h3>
 
             <div class="wpr-setting">
                 <h4>
@@ -653,7 +716,7 @@ function wpr_addons_settings_page() {
         </div>
 
         <div class="wpr-settings-group">
-            <h3 class="wpr-settings-group-title"><?php esc_html_e( 'Lightbox', 'wpr-addons' ); ?></h3>
+            <h3 id="lightbox-tab" class="wpr-settings-group-title"><?php esc_html_e( 'Lightbox', 'wpr-addons' ); ?></h3>
 
             <div class="wpr-setting">
                 <h4><?php esc_html_e( 'Background Color', 'wpr-addons' ); ?></h4>
@@ -783,6 +846,7 @@ function wpr_addons_settings_page() {
                     <li><span>9 Premade Popup Templates</span></li>
                     <li><span>Particle Effects</span></li>
                     <li><span>Parallax Effect</span></li>
+                    <li><span>Sticky Section</span></li>
                     <li><span>Free Templates Kit Library</span></li>
                     <li><span>Theme Builder</span></li>
                     <li><span>WooCommerce Shop Builder  </span></li>
@@ -849,7 +913,7 @@ function wpr_addons_settings_page() {
                             <li>Trim Title & Excerpt By Letter Count</li>
                         </ul>
                     </li>
-                    <li><span>Advanced Woocommerce Grid/Slider/Carousel Widget</span>
+                    <li><span>Advanced Woo Grid/Slider/Carousel Widget</span>
                         <ul>
                             <li>Grid Columns 1,2,3,4,5,6</li>
                             <li>Masonry Layout</li>
@@ -1263,7 +1327,15 @@ function wpr_addons_settings_page() {
                             <li>Multilayer Parallax</li>
                         </ul>
                     </li>
-                    <li><span>Premium Template Kit Library - View Demo</span>
+                    <li><span class="wpr-advanced-sticky-options">Advanced Sticky Section - View Demo</span>
+                        <ul>
+                            <li>Replace Header Section with a new Section on Scroll</li>
+                            <li>Change Section Height, Background and Text/Link Colors and Scale logo with transitions</li>
+                            <li>Hide Section when Scrolling Down and only show when Scrolling Up</li>
+                            <li>Add Borders, Shadows and Animations on Scroll</li>
+                        </ul>
+                    </li>
+                    <li><span class="wpr-premium-template-kit-lib">Premium Template Kit Library - View Demo</span>
                         <ul>
                             <li>Access to All Premium Template Kit Library. Ready to use Sites which can be imported in one click in a few seconds.</li>
                         </ul>
@@ -1385,7 +1457,19 @@ function wpr_addons_settings_page() {
                                 echo '<a href="https://demosites.royal-elementor-addons.com/digital-marketing-agency-v1/?ref=rea-plugin-backend-elements-advanced-stiky-preview" target="_blank">Demo 4, </a>';
                                 echo '<a href="https://demosites.royal-elementor-addons.com/construction-v3/?ref=rea-plugin-backend-elements-advanced-stiky-preview" target="_blank">Demo 5</a>';
                             echo '</p>';
-                            echo '<a href="https://royal-elementor-addons.com/?ref=rea-plugin-backend-elements-advanced-stiky-pro#purchasepro" target="_blank">Upgrade to Pro</a>';
+                            echo '<a class="wpr-sticky-video-tutorial wpr-inline-link" href="https://www.youtube.com/watch?v=ORay3VWrWuc" target="_blank">Watch Video Tutorial</a>';
+                            echo '<a class="wpr-inline-link" href="https://royal-elementor-addons.com/?ref=rea-plugin-backend-elements-advanced-stiky-pro#purchasepro" target="_blank">Upgrade to Pro</a>';
+                        } else {
+                            echo '<h4 class="wpr-sticky-advanced-demos-title">Advanced Sticky Section</h4>';
+                            echo '<p class="wpr-sticky-advanced-demos">';
+                                echo '<span>View Demos: </span>';
+                                echo '<a href="https://demosites.royal-elementor-addons.com/fashion-v2/?ref=rea-plugin-backend-elements-advanced-stiky-preview" target="_blank">Demo 1, </a>';
+                                echo '<a href="https://demosites.royal-elementor-addons.com/digital-marketing-agency-v2/?ref=rea-plugin-backend-elements-advanced-stiky-preview" target="_blank">Demo 2, </a>';
+                                echo '<a href="https://demosites.royal-elementor-addons.com/personal-blog-v1/?ref=rea-plugin-backend-elements-advanced-stiky-preview" target="_blank">Demo 3, </a>';
+                                echo '<a href="https://demosites.royal-elementor-addons.com/digital-marketing-agency-v1/?ref=rea-plugin-backend-elements-advanced-stiky-preview" target="_blank">Demo 4, </a>';
+                                echo '<a href="https://demosites.royal-elementor-addons.com/construction-v3/?ref=rea-plugin-backend-elements-advanced-stiky-preview" target="_blank">Demo 5</a>';
+                            echo '</p>';
+                            echo '<a class="wpr-sticky-video-tutorial" href="https://www.youtube.com/watch?v=ORay3VWrWuc" target="_blank">Watch Video Tutorial</a>';
                         }
                     } elseif ( 'wpr-custom-css' === $option_name ) {
                         echo '<br><span>Tip: Edit any Section > Navigate to Advanced tab</span>';

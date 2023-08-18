@@ -11,21 +11,19 @@ function theme_enqueue_styles() {
 
 //Hook
 
-function hide_admin_menu ( $items, $args ) {
+add_filter( 'wp_nav_menu_items', 'planty_add_admin_link_to_menu', 10, 2 );
+function planty_add_admin_link_to_menu( $items, $args ) {
+    // Vérifier si l'utilisateur est connecté
+    if ( is_user_logged_in() ) {
+        // Créer le lien "Admin"
+        $admin_link = '<li><a href="' . admin_url() . '">Admin</a></li>';
 
-    $user_is_logged_in = is_user_logged_in();
+        // Trouver la position du lien "Nous rencontrer" dans les éléments du menu
+        $rencontrer_position = strpos( $items, 'Nous rencontrer' );
 
-    // Parcourez les éléments du menu
-    foreach ( $items as $key => $item ) {
-        // Vérifiez si l'élément de menu est intitulé "Admin" et si l'utilisateur n'est pas connecté
-        if ( $item->title === 'Admin' && ! $user_is_logged_in ) {
-            // Supprimez l'élément de menu du tableau
-            unset( $items[ $key ] );
-        }
+        // Insérer le lien "Admin" après le lien "Nous rencontrer"
+        $items = substr_replace( $items, $admin_link, $rencontrer_position + strlen('Nous rencontrer'), 0 );
     }
     return $items;
 }
-
-// Ajoutez le filtre pour exécuter la fonction sur le hook wp_nav_menu_objects
-add_filter( 'wp_nav_menu_objects', 'hide_admin_menu', 10, 2 );
 
