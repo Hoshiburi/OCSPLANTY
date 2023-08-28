@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-14 06:39:08+0000\n"
+"PO-Revision-Date: 2023-08-21 17:34:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,12 +37,6 @@ msgstr "Afficher l’évaluation moyenne d’un produit avec des étoiles"
 
 #: assets/client/admin/product-editor/blocks/blocks/product-variations-fields/block.json
 #: assets/client/admin/product-editor/blocks/variations/block.json
-msgctxt "block keyword"
-msgid "variations"
-msgstr "variantes"
-
-#: assets/client/admin/product-editor/blocks/blocks/product-variations-fields/block.json
-#: assets/client/admin/product-editor/blocks/variations/block.json
 msgctxt "block description"
 msgid "The product variations."
 msgstr "Les variations du produit."
@@ -58,6 +52,12 @@ msgstr "Champs de variation des produits"
 msgctxt "block title"
 msgid "Product Rating Stars"
 msgstr "Note d’évaluation des produits"
+
+#: assets/client/admin/product-editor/blocks/blocks/product-variations-fields/block.json
+#: assets/client/admin/product-editor/blocks/variations/block.json
+msgctxt "block keyword"
+msgid "variations"
+msgstr "variations"
 
 #. translators: %1$s opening link tag %2$s closing link tag.
 #: src/Utilities/PluginUtil.php:224
@@ -85,10 +85,6 @@ msgstr "⚠ Une extension incompatible a été détectée (%s)."
 msgid "High performance order storage"
 msgstr "Stockage des commandes haute performance"
 
-#: src/Internal/DataStores/Orders/CustomOrdersTableController.php:528
-msgid "Keep the posts and orders tables in sync (compatibility mode)."
-msgstr "Maintenez la synchronisation des tableaux de publications et de commandes (mode compatibilité)."
-
 #. translators: %d: number of pending orders.
 #: src/Internal/DataStores/Orders/CustomOrdersTableController.php:508
 msgid "Currently syncing orders... %d pending"
@@ -98,20 +94,24 @@ msgstr "Synchronisation des commandes en cours... %d en attente"
 msgid "High performance order storage (new)"
 msgstr "Stockage des commandes haute performance (nouveau)"
 
-#: src/Internal/DataStores/Orders/CustomOrdersTableController.php:484
-msgid "WordPress post tables"
-msgstr "Tableau des publications WordPress"
-
 #: src/Internal/Admin/RemoteFreeExtensions/DefaultFreeExtensions.php:864
 msgid "Get paid with WooPayments"
 msgstr "Se faire payer avec WooPayments"
+
+#: src/Internal/DataStores/Orders/CustomOrdersTableController.php:484
+msgid "WordPress post tables"
+msgstr "Table des publications WordPress"
+
+#: src/Internal/DataStores/Orders/CustomOrdersTableController.php:528
+msgid "Keep the posts and orders tables in sync (compatibility mode)."
+msgstr "Maintenez la synchronisation des tables de publications et de commandes (mode compatibilité)."
 
 #. translators: %d: number of pending orders.
 #: src/Internal/DataStores/Orders/CustomOrdersTableController.php:514
 msgid "Sync %d pending order. You can switch data storage for orders only when posts and orders table are in sync."
 msgid_plural "Sync %d pending orders. You can switch data storage for orders only when posts and orders table are in sync."
-msgstr[0] "Synchronisation de %d commande en attente Vous ne pouvez modifier le stockage des données pour les commandes que lorsque les tableaux des publications et des commandes sont synchronisés."
-msgstr[1] "Synchronisation de %d commandes en attente Vous ne pouvez modifier le stockage des données pour les commandes que lorsque les tableaux des publications et des commandes sont synchronisés."
+msgstr[0] "Synchronisation d’%d commande en attente. Vous ne pouvez modifier le stockage des données pour les commandes que lorsque les tables des publications et des commandes sont synchronisées."
+msgstr[1] "Synchronisation de %d commandes en attente. Vous ne pouvez modifier le stockage des données pour les commandes que lorsque les tables des publications et des commandes sont synchronisées."
 
 #: src/Internal/Admin/RemoteFreeExtensions/DefaultFreeExtensions.php:174
 msgid "Grow and retain customers with intelligent, impactful email and SMS marketing automation and a consolidated view of customer interactions."
@@ -136,7 +136,7 @@ msgstr "Klaviyo"
 #. like size or color. strong closing tag.
 #: src/Admin/Features/ProductBlockEditor/Init.php:721
 msgid "%1$sSell your product in multiple variations like size or color.%2$s Get started by adding options for the buyers to choose on the product page."
-msgstr "%1$sVendez votre produit en plusieurs variantes, comme la taille ou la couleur.%2$s Commencez par ajouter des options que les acheteurs peuvent choisir sur la page du produit."
+msgstr "%1$sVendez votre produit en plusieurs variations, comme la taille ou la couleur.%2$s Commencez par ajouter des options que les acheteurs peuvent choisir sur la page du produit."
 
 #: src/Admin/Features/OnboardingTasks/Tasks/WooCommercePayments.php:37
 msgid "Set up WooPayments"
@@ -909,24 +909,9 @@ msgstr "Propulsé par %1$s avec %2$s"
 msgid "Log out"
 msgstr "Se déconnecter"
 
-#: includes/class-wc-product-variable.php:65
-msgid "This product has multiple variants. The options may be chosen on the product page"
-msgstr "Ce produit a plusieurs variantes. Les options peuvent être choisies sur la page de produit"
-
-#. translators: %d: products count
-#: includes/admin/importers/views/html-csv-import-done.php:36
-msgid "%s variations imported"
-msgid_plural "%s variations imported"
-msgstr[0] "%s variantes importées"
-msgstr[1] "%s variantes importées"
-
 #: includes/admin/class-wc-admin-assets.php:438
 msgid "Adding new attribute failed."
 msgstr "Échec de l’ajout du nouvel attribut."
-
-#: includes/admin/class-wc-admin-assets.php:303
-msgid "%qty% variations added"
-msgstr "%qty% variantes ajoutées"
 
 #: includes/wc-core-functions.php:1571
 msgctxt "Name of credit card"
@@ -962,6 +947,21 @@ msgstr "MasterCard"
 msgid "Get cozy this fall with knit sweaters"
 msgstr "Mettez-vous à l’aise cet automne avec des pulls en tricot"
 
+#: includes/class-wc-product-variable.php:65
+msgid "This product has multiple variants. The options may be chosen on the product page"
+msgstr "Ce produit a plusieurs variations. Les options peuvent être choisies sur la page du produit"
+
+#. translators: %d: products count
+#: includes/admin/importers/views/html-csv-import-done.php:36
+msgid "%s variations imported"
+msgid_plural "%s variations imported"
+msgstr[0] "%s variation importée"
+msgstr[1] "%s variations importées"
+
+#: includes/admin/class-wc-admin-assets.php:303
+msgid "%qty% variations added"
+msgstr "%qty% variations ajoutées"
+
 #: packages/woocommerce-blocks/assets/js/blocks/single-product/block.json
 #: packages/woocommerce-blocks/build/single-product/block.json
 msgctxt "block description"
@@ -986,18 +986,6 @@ msgctxt "block title"
 msgid "Mini-Cart Proceed to Checkout Button"
 msgstr "Mini panier - Bouton « Valider la commande »"
 
-#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/block.json
-#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-cart-button-block/block.json
-#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-checkout-button-block/block.json
-#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-shopping-button-block/block.json
-#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-cart-button-block/block.json
-#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-checkout-button-block/block.json
-#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-shopping-button-block/block.json
-#: packages/woocommerce-blocks/build/product-button/block.json
-msgctxt "block style label"
-msgid "Outline"
-msgstr "Contour"
-
 #: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-cart-button-block/block.json
 #: packages/woocommerce-blocks/build/inner-blocks/mini-cart-cart-button-block/block.json
 msgctxt "block description"
@@ -1015,6 +1003,30 @@ msgstr "Bouton de visualisation du mini panier"
 msgctxt "block description"
 msgid "A block that shows the reviews for a product."
 msgstr "Bloc qui affiche les avis sur un produit."
+
+#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-cart-button-block/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-checkout-button-block/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-shopping-button-block/block.json
+#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-cart-button-block/block.json
+#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-checkout-button-block/block.json
+#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-shopping-button-block/block.json
+#: packages/woocommerce-blocks/build/product-button/block.json
+msgctxt "block style label"
+msgid "Outline"
+msgstr "Contour"
+
+#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-cart-button-block/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-checkout-button-block/block.json
+#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-shopping-button-block/block.json
+#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-cart-button-block/block.json
+#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-checkout-button-block/block.json
+#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-shopping-button-block/block.json
+#: packages/woocommerce-blocks/build/product-button/block.json
+msgctxt "block style label"
+msgid "Fill"
+msgstr "Remplissage"
 
 #: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/product-reviews/block.json
 #: packages/woocommerce-blocks/build/product-reviews/block.json
@@ -1039,18 +1051,6 @@ msgstr "Onglet du produit."
 msgctxt "block title"
 msgid "Product tab"
 msgstr "Onglet du produit"
-
-#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/block.json
-#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-cart-button-block/block.json
-#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-checkout-button-block/block.json
-#: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-shopping-button-block/block.json
-#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-cart-button-block/block.json
-#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-checkout-button-block/block.json
-#: packages/woocommerce-blocks/build/inner-blocks/mini-cart-shopping-button-block/block.json
-#: packages/woocommerce-blocks/build/product-button/block.json
-msgctxt "block style label"
-msgid "Fill"
-msgstr "Remplissage"
 
 #: assets/client/admin/product-editor/blocks/blocks/product-summary-field/block.json
 #: assets/client/admin/product-editor/blocks/summary/block.json
@@ -1513,20 +1513,6 @@ msgstr "L’écran des fonctions HPOS est-il activé ?"
 msgid "HPOS feature screen enabled:"
 msgstr "Écran des fonctions HPOS activé :"
 
-#: includes/admin/meta-boxes/views/html-product-data-variations.php:153
-msgid "No variations yet. Generate them from all added attributes or add a new variation manually."
-msgstr "Encore aucune variante. Générez-les à partir de tous les attributs ajoutés ou ajoutez une nouvelle variante manuellement."
-
-#: includes/admin/meta-boxes/views/html-product-data-variations.php:77
-msgid "Generate variations"
-msgstr "Générer des variantes"
-
-#. translators: %1$s: url for attributes tab, %2$s: url for variable product
-#. documentation
-#: includes/admin/meta-boxes/views/html-product-data-variations.php:29
-msgid "Add some attributes in the <a class=\"variations-add-attributes-link\" href=\"%1$s\">Attributes</a> tab to generate variations. Make sure to check the <b>Used for variations</b> box. <a class=\"variations-learn-more-link\" href=\"%2$s\" target=\"_blank\" rel=\"noreferrer\">Learn more</a>"
-msgstr "Ajoutez quelques attributs dans l’onglet <a class=\"variations-add-attributes-link\" href=\"%1$s\">Attributs</a> pour générer des variantes. Veillez à cocher la case <b>Utilisé pour les variantes</b>. <a class=\"variations-learn-more-link\" href=\"%2$s\" target=\"_blank\" rel=\"noreferrer\">Lire la suite</a>"
-
 #: includes/admin/views/html-admin-page-status-report.php:42
 msgid "Download for support"
 msgstr "Télécharger pour l’assistance"
@@ -1537,6 +1523,20 @@ msgstr "Télécharger pour l’assistance"
 msgid "Drag images, upload new ones or select files from your library. For best results, use JPEG files that are 1000 by 1000 pixels or larger. %1$sHow to prepare images?%2$s"
 msgstr "Glisser des images, en mettre en ligne de nouvelles ou sélectionner des fichiers dans votre médiathèque. Pour de meilleurs résultats, utilisez des fichiers JPEG de 1 000 x 1 000 pixels ou plus. %1$sComment préparer les images ?%2$s"
 
+#: includes/admin/meta-boxes/views/html-product-data-variations.php:153
+msgid "No variations yet. Generate them from all added attributes or add a new variation manually."
+msgstr "Encore aucune variation. Générez-les à partir de tous les attributs ajoutés ou ajoutez une nouvelle variation manuellement."
+
+#: includes/admin/meta-boxes/views/html-product-data-variations.php:77
+msgid "Generate variations"
+msgstr "Générer des variations"
+
+#. translators: %1$s: url for attributes tab, %2$s: url for variable product
+#. documentation
+#: includes/admin/meta-boxes/views/html-product-data-variations.php:29
+msgid "Add some attributes in the <a class=\"variations-add-attributes-link\" href=\"%1$s\">Attributes</a> tab to generate variations. Make sure to check the <b>Used for variations</b> box. <a class=\"variations-learn-more-link\" href=\"%2$s\" target=\"_blank\" rel=\"noreferrer\">Learn more</a>"
+msgstr "Ajoutez quelques attributs dans l’onglet <a class=\"variations-add-attributes-link\" href=\"%1$s\">Attributs</a> pour générer des variations. Veillez à cocher la case <b>Utilisé pour les variations</b>. <a class=\"variations-learn-more-link\" href=\"%2$s\" target=\"_blank\" rel=\"noreferrer\">Lire la suite</a>"
+
 #: includes/admin/meta-boxes/views/html-product-data-attributes.php:35
 msgid "Add existing"
 msgstr "Ajouter existant"
@@ -1545,14 +1545,14 @@ msgstr "Ajouter existant"
 msgid "Create value"
 msgstr "Créer une valeur"
 
-#: includes/admin/class-wc-admin-assets.php:437
-msgid "If you remove this attribute, customers will no longer be able to purchase some variations of this product."
-msgstr "Si vous supprimez cet attribut, les clients ne pourront plus acheter certaines variantes de ce produit."
-
 #: includes/admin/class-wc-admin-assets.php:426
 #: includes/admin/meta-boxes/views/html-product-attribute.php:11
 msgid "New attribute"
 msgstr "Nouvel attribut"
+
+#: includes/admin/class-wc-admin-assets.php:437
+msgid "If you remove this attribute, customers will no longer be able to purchase some variations of this product."
+msgstr "Si vous retirez cet attribut, les clients ne pourront plus acheter certaines variations de ce produit."
 
 #: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/related-products/block.json
 #: packages/woocommerce-blocks/build/related-products/block.json
@@ -1578,17 +1578,17 @@ msgctxt "block title"
 msgid "Product Details"
 msgstr "Détails sur le produit"
 
-#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart-form/block.json
-#: packages/woocommerce-blocks/build/add-to-cart-form/block.json
-msgctxt "block description"
-msgid "Display a button so the customer can add a product to their cart. Options will also be displayed depending on product type. e.g. quantity, variation."
-msgstr "Affichez un bouton pour que le client puisse ajouter un produit à son panier. Des options seront également affichées en fonction du type de produit, par ex. quantité, variante."
-
 #: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/block.json
 #: packages/woocommerce-blocks/build/product-button/block.json
 msgctxt "block title"
 msgid "Add to Cart Button"
 msgstr "Bouton Ajouter au panier"
+
+#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart-form/block.json
+#: packages/woocommerce-blocks/build/add-to-cart-form/block.json
+msgctxt "block description"
+msgid "Display a button so the customer can add a product to their cart. Options will also be displayed depending on product type. e.g. quantity, variation."
+msgstr "Affichez un bouton pour que le client puisse ajouter un produit à son panier. Des options seront également affichées en fonction du type de produit, par ex. quantité, variation."
 
 #. translators: %s coupon code.
 #: src/Internal/Orders/CouponsController.php:95
@@ -1669,10 +1669,6 @@ msgstr "Suivre la quantité en stock pour ce produit"
 msgid "Stock management"
 msgstr "Gestion des stocks"
 
-#: includes/admin/meta-boxes/views/html-product-data-inventory.php:15
-msgid "Settings below apply to all variations without manual stock management enabled."
-msgstr "Les réglages ci-dessous s’appliquent à toutes les variantes sans gestion manuelle des stocks activée."
-
 #. translators: %s: WC_DELIMITER
 #: includes/admin/meta-boxes/views/html-product-attribute-inner.php:82
 msgid "Enter options for customers to choose from, f.e. “Blue” or “Large”. Use “%s” to separate different options."
@@ -1693,6 +1689,10 @@ msgstr "Encodage des caractères du fichier"
 #: includes/admin/class-wc-admin-assets.php:434
 msgid "Make sure you enter the name and values for each attribute."
 msgstr "Assurez-vous de saisir le nom et les valeurs de chaque attribut."
+
+#: includes/admin/meta-boxes/views/html-product-data-inventory.php:15
+msgid "Settings below apply to all variations without manual stock management enabled."
+msgstr "Les réglages ci-dessous s’appliquent aux variations n’ayant pas la gestion de stock à leur niveau."
 
 #: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/product-image-gallery/block.json
 #: packages/woocommerce-blocks/build/product-image-gallery/block.json
@@ -2203,6 +2203,10 @@ msgstr "L’action planifiée pour %1$s ne sera pas exécutée car aucun rappel 
 msgid "This action appears to be consistently failing. A new instance will not be scheduled."
 msgstr "Cette action semble échouer systématiquement. Une nouvelle instance ne sera pas planifiée."
 
+#: includes/rest-api/Controllers/Version3/class-wc-rest-products-controller.php:1437
+msgid "Slug automatically generated from the product name."
+msgstr "Slug généré automatiquement à partir du nom du produit."
+
 #. translators: 1) is the number of affected actions, 2) is a link to an admin
 #. screen.
 #: packages/action-scheduler/classes/ActionScheduler_AdminView.php:195
@@ -2210,10 +2214,6 @@ msgid "<strong>Action Scheduler:</strong> %1$d <a href=\"%2$s\">past-due action<
 msgid_plural "<strong>Action Scheduler:</strong> %1$d <a href=\"%2$s\">past-due actions</a> found; something may be wrong. <a href=\"https://actionscheduler.org/faq/#my-site-has-past-due-actions-what-can-i-do\" target=\"_blank\">Read documentation &raquo;</a>"
 msgstr[0] "<strong>Planificateur d’actions :</strong> %1$d <a href=\"%2$s\">action échue</a> trouvée ; il y a peut-être un problème. <a href=\"https://actionscheduler.org/faq/#my-site-has-past-due-actions-what-can-i-do\" target=\"_blank\">Lire la documentation »</a>"
 msgstr[1] "<strong>Planificateur d’actions :</strong> %1$d <a href=\"%2$s\">actions échues</a> trouvées ; il y a peut-être un problème. <a href=\"https://actionscheduler.org/faq/#my-site-has-past-due-actions-what-can-i-do\" target=\"_blank\">Lire la documentation »</a>"
-
-#: includes/rest-api/Controllers/Version3/class-wc-rest-products-controller.php:1437
-msgid "Slug automatically generated from the product name."
-msgstr "Slug généré automatiquement à partir du nom du produit."
 
 #: includes/rest-api/Controllers/Version3/class-wc-rest-products-controller.php:1430
 msgid "Permalink template for the product."
@@ -2234,14 +2234,14 @@ msgctxt "shipping country prefix"
 msgid "to"
 msgstr "vers"
 
-#: includes/admin/class-wc-admin-notices.php:145
-msgid "PHP version requirements will change soon"
-msgstr "Les prérequis de la version PHP vont changer prochainement"
-
 #. translators: Placeholder is a URL.
 #: includes/admin/class-wc-admin-notices.php:149
 msgid "WooCommerce 8.2, scheduled for <b>October 2023</b>, will require PHP 7.4 or newer to work. Your server is currently running an older version of PHP, so this change will impact your store. Upgrading to at least PHP 8.0 is recommended. <b><a href=\"%s\">Learn more about this change.</a></b>"
 msgstr "WooCommerce 8.2, prévu pour <b>octobre 2023</b>, nécessitera PHP 7.4 ou une version plus récente pour fonctionner. Votre serveur utilise actuellement une ancienne version de PHP. Cette modification aura donc un impact sur votre boutique. Nous vous recommandons de passer au minimum à la version PHP 8.0. <b><a href=\"%s\">En savoir plus sur cette modification.</a></b>"
+
+#: includes/admin/class-wc-admin-notices.php:145
+msgid "PHP version requirements will change soon"
+msgstr "Les prérequis de la version PHP vont changer prochainement"
 
 #: packages/woocommerce-blocks/assets/js/blocks/active-filters/block.json
 #: packages/woocommerce-blocks/build/active-filters/block.json
@@ -2723,7 +2723,7 @@ msgstr "Ajouter un prix"
 
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ProductSchema.php:257
 msgid "List of attributes (taxonomy terms) assigned to the product. For variable products, these are mapped to variations (see the `variations` field)."
-msgstr "Liste d’attributs (termes de taxonomie) assignés au produit. Pour les produits variables, ces éléments sont associés à des variantes (voir le champ « variantes »)."
+msgstr "Liste d’attributs (termes de taxonomie) assignés au produit. Pour les produits variables, ces éléments sont associés à des variations (voir le champ « variations »)."
 
 #: packages/woocommerce-blocks/assets/js/blocks/stock-filter/block.json
 #: packages/woocommerce-blocks/build/stock-filter/block.json
@@ -2918,7 +2918,7 @@ msgstr "Contient des blocs qui affichent le contenu du mini panier."
 #: packages/woocommerce-blocks/build/featured-product/block.json
 msgctxt "block description"
 msgid "Highlight a product or variation."
-msgstr "Mettez en avant un produit ou une variante."
+msgstr "Mettez en avant un produit ou une variation."
 
 #: packages/woocommerce-blocks/assets/js/blocks/attribute-filter/block.json
 #: packages/woocommerce-blocks/build/attribute-filter/block.json
@@ -3069,11 +3069,11 @@ msgstr "Décrivez ce produit. Qu’est-ce qui le rend unique ? Quelles sont ses
 
 #: includes/admin/class-wc-admin-assets.php:431
 msgid "Product types define available product details and attributes, such as downloadable files and variations. They’re also used for analytics and inventory management."
-msgstr "Les types de produits définissent les détails et les attributs des produits disponibles, tels que les fichiers téléchargeables et les variantes. Ils sont également utilisés pour l’analyse et la gestion des stocks."
+msgstr "Les types de produits définissent les détails et les attributs des produits disponibles, tels que les fichiers téléchargeables et les variations. Ils sont également utilisés pour les statistiques et la gestion des stocks."
 
 #: includes/admin/class-wc-admin-assets.php:430
 msgid "<b>Variable –</b> a product with variations, each of which may have a different SKU, price, stock option, etc. For example, a t-shirt available in different colors and/or sizes."
-msgstr "<b>Variable</b> : un produit avec des variantes, chacune pouvant avoir une référence, un prix, une option de stock, etc. différents. Par exemple, un t-shirt disponible dans différentes couleurs et/ou tailles."
+msgstr "<b>Variable</b> : un produit avec des variations, chacune pouvant avoir une référence, un prix, une option de stock, etc. Par exemple, un t-shirt disponible dans différentes couleurs et/ou tailles."
 
 #: includes/admin/class-wc-admin-assets.php:429
 msgid "<b>External or Affiliate –</b> one that you list and describe on your website but is sold elsewhere."
@@ -3467,15 +3467,15 @@ msgstr "Découvrir des fournisseurs de paiement supplémentaires"
 msgid "Finish set up"
 msgstr "Terminer la configuration"
 
-#: includes/admin/meta-boxes/views/html-product-data-variations.php:43
-msgid "Choose a default form value if you want a certain variation already selected when a user visits the product page."
-msgstr "Choisissez une valeur de formulaire par défaut si vous souhaitez qu’une certaine variante soit déjà sélectionnée lorsqu’un utilisateur visite la page du produit."
-
 #. Translators: %1$d is the batch number, %2$d is the number of processed
 #. orders and %3$d is the execution time in seconds.
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:206
 msgid "Batch %1$d (%2$d orders) completed in %3$d seconds"
 msgstr "Lot %1$d (%2$d commandes) terminé en %3$d secondes"
+
+#: includes/admin/meta-boxes/views/html-product-data-variations.php:43
+msgid "Choose a default form value if you want a certain variation already selected when a user visits the product page."
+msgstr "Choisissez une valeur de formulaire par défaut si vous souhaitez qu’une certaine variation soit déjà sélectionnée lorsqu’un internaute visite la page du produit."
 
 #: includes/admin/meta-boxes/views/html-product-data-inventory.php:170
 msgid "Check to let customers to purchase only 1 item in a single order. This is particularly useful for items that have limited quantity, for example art or handmade goods."
@@ -4760,12 +4760,6 @@ msgstr "Notification de transfert de données de paiement (PDT) reçue pour un a
 msgid "Received PDT notification for order %1$d on endpoint for order %2$d."
 msgstr "Notification de transfert de données de paiement (PDT) reçue pour la commande %1$d sur le point de terminaison de la commande %2$d."
 
-#: packages/woocommerce-blocks/assets/js/blocks/checkout/block.json
-#: packages/woocommerce-blocks/build/checkout/block.json
-msgctxt "block description"
-msgid "Display a checkout form so your customers can submit orders."
-msgstr "Affichez un formulaire de validation de commande pour que vos clients puissent passer des commandes."
-
 #: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/add-to-cart-form/block.json
 #: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/button/block.json
 #: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/product-details/block.json
@@ -4841,6 +4835,12 @@ msgstr "Affichez un formulaire de validation de commande pour que vos clients pu
 msgctxt "block keyword"
 msgid "WooCommerce"
 msgstr "WooCommerce"
+
+#: packages/woocommerce-blocks/assets/js/blocks/checkout/block.json
+#: packages/woocommerce-blocks/build/checkout/block.json
+msgctxt "block description"
+msgid "Display a checkout form so your customers can submit orders."
+msgstr "Affichez un formulaire de validation de commande pour que vos clients puissent passer des commandes."
 
 #: packages/woocommerce-blocks/assets/js/blocks/checkout/block.json
 #: packages/woocommerce-blocks/build/checkout/block.json
@@ -6501,14 +6501,6 @@ msgstr "L’extension Payfast pour WooCommerce vous permet d’accepter les paie
 msgid "Mollie"
 msgstr "Mollie"
 
-#: src/Admin/API/Reports/Variations/Stats/Controller.php:140
-msgid "Number of variation items sold."
-msgstr "Nombre d’articles de variante vendus."
-
-#: src/Admin/API/Reports/Variations/Stats/Controller.php:139
-msgid "Variations Sold"
-msgstr "Variantes vendues"
-
 #: src/Admin/API/Reports/Products/Stats/Controller.php:136
 msgid "Number of product items sold."
 msgstr "Nombre d’articles de produit vendus."
@@ -6548,6 +6540,14 @@ msgstr "Marquer annulée"
 #: includes/export/class-wc-product-csv-exporter.php:620
 msgid "Download %d ID"
 msgstr "ID de téléchargement %d"
+
+#: src/Admin/API/Reports/Variations/Stats/Controller.php:140
+msgid "Number of variation items sold."
+msgstr "Nombre de variations d’articles vendues."
+
+#: src/Admin/API/Reports/Variations/Stats/Controller.php:139
+msgid "Variations Sold"
+msgstr "Variations vendues"
 
 #: src/Admin/Features/OnboardingTasks/TaskLists.php:144
 #: assets/client/admin/app/index.js:2
@@ -6922,10 +6922,6 @@ msgstr "Montant qui sera remboursé pour cet article de ligne (hors taxes)."
 msgid "Coupon item ID is readonly."
 msgstr "L’ID d’article de code promo est en lecture seule."
 
-#: includes/rest-api/Controllers/Version3/class-wc-rest-product-variations-controller.php:643
-msgid "Low Stock amount for the variation."
-msgstr "Faible quantité de stock pour la variante."
-
 #: includes/rest-api/Controllers/Version3/class-wc-rest-products-controller.php:1073
 msgid "Low Stock amount for the product."
 msgstr "Faible quantité de stock pour le produit."
@@ -6946,13 +6942,17 @@ msgstr "Code postal / ZIP, il ne permet pas plusieurs valeurs. Déprécié depui
 msgid "City name, it doesn't support multiple values. Deprecated as of WooCommerce 5.3, 'cities' should be used instead."
 msgstr "Nom de la ville, il ne permet pas plusieurs valeurs. Déprécié depuis WooCommerce 5.3, « villes » devrait être utilisé à la place."
 
-#: includes/admin/meta-boxes/views/html-variation-admin.php:244
-msgid "When variation stock reaches this amount you will be notified by email. The default value for all variations can be set in the product Inventory tab. The shop default value can be set in Settings > Products > Inventory."
-msgstr "Lorsque le stock de variantes atteindra cette valeur, vous recevrez une notification par e-mail. The default value for all variations can be set in the product Inventory tab. The shop default value can be set in Settings > Produits > Inventaire."
-
 #: includes/class-wc-tax.php:831
 msgid "Tax class slug is invalid"
 msgstr "L’identifiant de la classe de taxe n’est pas valide"
+
+#: includes/rest-api/Controllers/Version3/class-wc-rest-product-variations-controller.php:643
+msgid "Low Stock amount for the variation."
+msgstr "Faible quantité de stock pour la variation."
+
+#: includes/admin/meta-boxes/views/html-variation-admin.php:244
+msgid "When variation stock reaches this amount you will be notified by email. The default value for all variations can be set in the product Inventory tab. The shop default value can be set in Settings > Products > Inventory."
+msgstr "Lorsque le stock de la variation atteindra cette valeur, vous recevrez une notification par e-mail. La valeur par défaut pour toutes les variations peut être définie dans l’onglet Inventaire. La valeur par défaut de la boutique peut être définie dans Réglages > Produits > Inventaire."
 
 #. translators: 1: page name 2: page ID
 #: includes/admin/class-wc-admin-settings.php:622
@@ -6971,14 +6971,14 @@ msgstr "Seuil du produit parent (%d)"
 msgid "Store-wide threshold (%d)"
 msgstr "Seuil à l’échelle de la boutique (%d)"
 
-#. translators: 1: product link, 2: product name
-#: includes/class-wc-cart.php:1139
-msgid "The selected product isn't a variation of %2$s, please choose product options by visiting <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
-msgstr "Le produit sélectionné n’est pas une variante de %2$s, veuillez choisir des options de produit en visitant <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
-
 #: includes/admin/meta-boxes/views/html-product-data-inventory.php:100
 msgid "When product stock reaches this amount you will be notified by email. It is possible to define different values for each variation individually. The shop default value can be set in Settings > Products > Inventory."
 msgstr "Lorsque le stock atteindra cette valeur, vous recevrez une notification par e-mail. It is possible to define different values for each variation individually. The shop default value can be set in Settings > Produits > Inventaire."
+
+#. translators: 1: product link, 2: product name
+#: includes/class-wc-cart.php:1139
+msgid "The selected product isn't a variation of %2$s, please choose product options by visiting <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
+msgstr "Le produit sélectionné n’est pas une variation de %2$s, veuillez choisir des options de produit en visitant <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
 
 #: src/Admin/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:282
 msgid "Effortless payments by Mollie: Offer global and local payment methods, get onboarded in minutes, and supported in your language."
@@ -7637,40 +7637,6 @@ msgstr "Ajoute la nouvelle expérience de navigation WooCommerce au tableau de b
 msgid "Navigation"
 msgstr "Navigation"
 
-#: src/Admin/API/Reports/Controller.php:57
-msgid "Stats about variations."
-msgstr "Statistiques relatives aux variantes."
-
-#: src/Admin/API/Reports/Controller.php:53
-msgid "Variations detailed reports."
-msgstr "Rapports détaillés sur les variantes."
-
-#: src/Admin/API/Reports/Orders/Controller.php:325
-#: src/Admin/API/Reports/Orders/Stats/Controller.php:435
-msgid "Limit result set to items that don't have the specified variation(s) assigned."
-msgstr "Limiter le jeu de résultats aux articles auxquels la ou les variantes spécifiées ne sont pas assignées."
-
-#: src/Admin/API/Reports/Orders/Controller.php:315
-#: src/Admin/API/Reports/Orders/Stats/Controller.php:425
-msgid "Limit result set to items that have the specified variation(s) assigned."
-msgstr "Limiter le jeu de résultats aux articles auxquels la ou les variantes spécifiées sont assignées."
-
-#: src/Admin/API/Reports/Variations/Controller.php:362
-msgid "Limit result set to variations in the specified categories."
-msgstr "Limiter le jeu de résultats aux variantes appartenant aux catégories spécifiées."
-
-#: src/Admin/API/Reports/Variations/Controller.php:353
-msgid "Limit result set to variations that don't include the specified attributes."
-msgstr "Limiter le jeu de résultats aux variantes qui n’incluent pas les attributs spécifiés."
-
-#: src/Admin/API/Reports/Variations/Controller.php:344
-msgid "Limit result set to variations that include the specified attributes."
-msgstr "Limiter le jeu de résultats aux variantes qui incluent les attributs spécifiés."
-
-#: src/Admin/API/Reports/Variations/Controller.php:337
-msgid "Add additional piece of info about each variation to the report."
-msgstr "Ajouter une information supplémentaire sur chaque variante au rapport."
-
 #: src/Admin/API/Reports/Variations/Controller.php:318
 #: src/Admin/API/Reports/Variations/Stats/Controller.php:263
 msgid "Limit result set to items that don't have the specified parent product(s)."
@@ -7681,14 +7647,48 @@ msgstr "Limiter le jeu de résultats aux articles qui n’incluent pas le ou les
 msgid "Limit result set to items that have the specified parent product(s)."
 msgstr "Limiter le jeu de résultats aux articles qui incluent le ou les produits parents spécifiés."
 
-#: src/Admin/API/Reports/Variations/Controller.php:371
-#: src/Admin/API/Reports/Variations/Stats/Controller.php:244
-msgid "Limit result set to variations not in the specified categories."
-msgstr "Limiter le jeu de résultats aux variantes n’appartenant pas aux catégories spécifiées."
-
 #: includes/admin/class-wc-admin-addons.php:646
 msgid "Securely accept cards in your store. See payments, track cash flow into your bank account, and stay on top of disputes – right from your dashboard."
 msgstr "Acceptez en toute sécurité les paiements dans votre boutique. Consultez les paiements, suivez vos rentrées d’argent et restez au fait des différends éventuels, le tout depuis votre tableau de bord."
+
+#: src/Admin/API/Reports/Variations/Controller.php:337
+msgid "Add additional piece of info about each variation to the report."
+msgstr "Ajouter une information supplémentaire sur chaque variation au rapport."
+
+#: src/Admin/API/Reports/Variations/Controller.php:362
+msgid "Limit result set to variations in the specified categories."
+msgstr "Limiter le jeu de résultats aux variations appartenant aux catégories spécifiées."
+
+#: src/Admin/API/Reports/Orders/Controller.php:315
+#: src/Admin/API/Reports/Orders/Stats/Controller.php:425
+msgid "Limit result set to items that have the specified variation(s) assigned."
+msgstr "Limiter le jeu de résultats aux articles auxquels la ou les variations spécifiées sont assignées."
+
+#: src/Admin/API/Reports/Orders/Controller.php:325
+#: src/Admin/API/Reports/Orders/Stats/Controller.php:435
+msgid "Limit result set to items that don't have the specified variation(s) assigned."
+msgstr "Limiter le jeu de résultats aux articles auxquels la ou les variations spécifiées ne sont pas assignées."
+
+#: src/Admin/API/Reports/Variations/Controller.php:371
+#: src/Admin/API/Reports/Variations/Stats/Controller.php:244
+msgid "Limit result set to variations not in the specified categories."
+msgstr "Limiter le jeu de résultats aux variations n’appartenant pas aux catégories spécifiées."
+
+#: src/Admin/API/Reports/Variations/Controller.php:353
+msgid "Limit result set to variations that don't include the specified attributes."
+msgstr "Limiter le jeu de résultats aux variations qui n’incluent pas les attributs spécifiés."
+
+#: src/Admin/API/Reports/Controller.php:57
+msgid "Stats about variations."
+msgstr "Statistiques relatives aux variations."
+
+#: src/Admin/API/Reports/Controller.php:53
+msgid "Variations detailed reports."
+msgstr "Rapports détaillés sur les variations."
+
+#: src/Admin/API/Reports/Variations/Controller.php:344
+msgid "Limit result set to variations that include the specified attributes."
+msgstr "Limiter le jeu de résultats aux variations qui incluent les attributs spécifiés."
 
 #: includes/admin/class-wc-admin-addons.php:645
 msgid "Payments made simple, with no monthly fees &mdash; exclusively for WooCommerce stores."
@@ -9156,10 +9156,6 @@ msgstr "ID de la ressource."
 msgid "The term slug."
 msgstr "Slug du terme."
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ProductSchema.php:338
-msgid "List of variation attributes."
-msgstr "Liste des attributs de variantes."
-
 #: includes/wc-user-functions.php:57
 msgid "An account is already registered with your email address. <a href=\"#\" class=\"showlogin\">Please log in.</a>"
 msgstr "Un compte est déjà enregistré avec votre adresse e-mail. <a href=\"#\" class=\"showlogin\">Veuillez vous connecter.</a>"
@@ -9192,10 +9188,6 @@ msgstr "Attribut assigné."
 msgid "The term name."
 msgstr "Nom du terme."
 
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ProductSchema.php:282
-msgid "True if this attribute is used by product variations."
-msgstr "Vrai si cet attribut est utilisé par les variantes de produit."
-
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ProductSchema.php:270
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ProductSchema.php:345
 msgid "The attribute name."
@@ -9225,6 +9217,14 @@ msgstr "Taxonomie de l’attribut ou nul si l’attribut n’est pas basé sur l
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ProductSchema.php:332
 msgid "The attribute ID, or 0 if the attribute is not taxonomy based."
 msgstr "ID de l’attribut ou 0 si l’attribut n’est pas basé sur la taxonomie."
+
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ProductSchema.php:338
+msgid "List of variation attributes."
+msgstr "Liste des attributs de variations."
+
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ProductSchema.php:282
+msgid "True if this attribute is used by product variations."
+msgstr "Vrai si cet attribut est utilisé par les variations de produit."
 
 #: src/Internal/Admin/Onboarding/OnboardingProducts.php:51
 msgid "Bundles"
@@ -11266,10 +11266,6 @@ msgstr "(Supprimé)"
 msgid "%s (Deleted)"
 msgstr "%s (supprimé)"
 
-#: src/Admin/API/Reports/Products/Controller.php:212
-msgid "Product variations IDs."
-msgstr "ID des variantes du produit."
-
 #: src/Admin/API/Reports/Products/Controller.php:188
 msgid "Product category IDs."
 msgstr "ID des catégories du produit."
@@ -11279,11 +11275,6 @@ msgstr "ID des catégories du produit."
 #: src/Admin/API/Reports/Variations/Stats/Controller.php:235
 msgid "Limit result to items from the specified categories."
 msgstr "Limiter le résultat aux articles appartenant aux catégories spécifiées."
-
-#: src/Admin/API/Reports/Products/Stats/Controller.php:168
-#: src/Admin/API/Reports/Variations/Stats/Controller.php:172
-msgid "Human readable segment label, either product or variation name."
-msgstr "Étiquette de segment clairement lisible (nom de produit ou de variante)."
 
 #: src/Admin/API/Reports/Downloads/Stats/DataStore.php:120
 #: src/Admin/API/Reports/Downloads/Stats/DataStore.php:136
@@ -11411,6 +11402,15 @@ msgstr "Limiter le jeu de résultats aux articles auxquels le ou les taux de tax
 #: src/Admin/API/Reports/Orders/Stats/Controller.php:473
 msgid "Limit result set to items that don't have the specified tax rate(s) assigned."
 msgstr "Limiter le jeu de résultats aux articles auxquels le ou les taux de taxe spécifiés ne sont pas assignés."
+
+#: src/Admin/API/Reports/Products/Controller.php:212
+msgid "Product variations IDs."
+msgstr "ID des variations du produit."
+
+#: src/Admin/API/Reports/Products/Stats/Controller.php:168
+#: src/Admin/API/Reports/Variations/Stats/Controller.php:172
+msgid "Human readable segment label, either product or variation name."
+msgstr "Étiquette de segment clairement lisible (nom de produit ou de variation)."
 
 #: src/Admin/API/Reports/Categories/Controller.php:292
 msgid "Add additional piece of info about each category to the report."
@@ -11565,12 +11565,6 @@ msgstr "N. Revenu"
 msgid "Add additional piece of info about each product to the report."
 msgstr "Ajouter une information supplémentaire sur chaque produit au rapport."
 
-#: src/Admin/API/Reports/Products/Stats/Controller.php:240
-#: src/Admin/API/Reports/Variations/Controller.php:328
-#: src/Admin/API/Reports/Variations/Stats/Controller.php:273
-msgid "Limit result to items with specified variation ids."
-msgstr "Limiter le résultat aux articles possédant les ID de variante spécifiés."
-
 #: src/Admin/API/Reports/Products/Controller.php:263
 #: src/Admin/API/Reports/Products/Stats/Controller.php:231
 msgid "Limit result to items with specified product ids."
@@ -11610,11 +11604,6 @@ msgstr "Nombre de commandes dans lesquelles le produit apparaît."
 #: src/Admin/API/Reports/Variations/Controller.php:176
 msgid "Total Net sales of all items sold."
 msgstr "Ventes nettes totales des articles vendus."
-
-#: src/Admin/API/Reports/Stock/Controller.php:490
-#: assets/client/admin/chunks/analytics-report-stock.js:1
-msgid "Product / Variation"
-msgstr "Produit/variante"
 
 #: src/Admin/API/Reports/Stock/Controller.php:474
 msgid "Limit result set to items assigned a stock report type."
@@ -11717,6 +11706,17 @@ msgstr "Titre de produit / variation"
 #: src/Admin/API/Reports/Variations/Controller.php:213
 msgid "Product attributes."
 msgstr "Attributs du produit."
+
+#: src/Admin/API/Reports/Stock/Controller.php:490
+#: assets/client/admin/chunks/analytics-report-stock.js:1
+msgid "Product / Variation"
+msgstr "Produit/variation"
+
+#: src/Admin/API/Reports/Products/Stats/Controller.php:240
+#: src/Admin/API/Reports/Variations/Controller.php:328
+#: src/Admin/API/Reports/Variations/Stats/Controller.php:273
+msgid "Limit result to items with specified variation ids."
+msgstr "Limiter le résultat aux articles possédant les ID de variation spécifiés."
 
 #: src/Admin/API/Reports/Revenue/Stats/Controller.php:210
 msgid "Gross sales."
@@ -12105,12 +12105,6 @@ msgstr "ID unique de l’action de note."
 msgid "Parameters to pass on to the exported report."
 msgstr "Paramètres de validation du rapport exporté."
 
-#: src/Admin/API/Reports/Coupons/Stats/Segmenter.php:283
-#: src/Admin/API/Reports/Orders/Stats/Segmenter.php:378
-#: src/Admin/API/Reports/Products/Stats/Segmenter.php:169
-msgid "product_includes parameter need to specify exactly one product when segmenting by variation."
-msgstr "Le paramètre product_includes doit indiquer clairement un produit lors d’une segmentation par variante."
-
 #: src/Admin/API/Reports/Controller.php:81
 msgid "Stats about taxes."
 msgstr "Statistiques sur les taxes."
@@ -12141,6 +12135,12 @@ msgstr "Nombre de commandes avec remise."
 #: src/Admin/API/Reports/Revenue/Stats/Controller.php:160
 msgid "Amount discounted by coupons."
 msgstr "Montant de la remise par code promo."
+
+#: src/Admin/API/Reports/Coupons/Stats/Segmenter.php:283
+#: src/Admin/API/Reports/Orders/Stats/Segmenter.php:378
+#: src/Admin/API/Reports/Products/Stats/Segmenter.php:169
+msgid "product_includes parameter need to specify exactly one product when segmenting by variation."
+msgstr "Le paramètre product_includes doit indiquer clairement un produit lors d’une segmentation par variation."
 
 #: src/Admin/ReportCSVEmail.php:73
 msgid "Your Report Download"
@@ -12716,11 +12716,6 @@ msgstr "Vous devez configurer l’enregistreur de destination avant de procéder
 msgid "Source logger must be configured before running a migration"
 msgstr "Vous devez configurer l’enregistreur de source avant de procéder à la migration"
 
-#. translators: 1: next cleanup message 2: github issue URL
-#: packages/action-scheduler/classes/ActionScheduler_WPCommentCleaner.php:108
-msgid "Action Scheduler has migrated data to custom tables; however, orphaned log entries exist in the WordPress Comments table. %1$s <a href=\"%2$s\">Learn more &raquo;</a>"
-msgstr "Le planificateur d’actions a migré les données dans des tableaux personnalisés. Il existe toutefois des entrées de journal orphelines dans le tableau de commentaires WordPress. %1$s <a href=\"%2$s\">En savoir plus »</a>"
-
 #: includes/admin/settings/class-wc-settings-products.php:438
 msgid "Append a unique string to filename for security"
 msgstr "Ajout d’une chaîne unique au nom de fichier pour garantir la sécurité"
@@ -12736,6 +12731,11 @@ msgstr "Package du planificateur d’actions fonctionnant sur votre site."
 #: includes/admin/views/html-admin-page-status-report.php:111
 msgid "Action Scheduler package"
 msgstr "Package du planificateur d’actions"
+
+#. translators: 1: next cleanup message 2: github issue URL
+#: packages/action-scheduler/classes/ActionScheduler_WPCommentCleaner.php:108
+msgid "Action Scheduler has migrated data to custom tables; however, orphaned log entries exist in the WordPress Comments table. %1$s <a href=\"%2$s\">Learn more &raquo;</a>"
+msgstr "Le planificateur d’actions a migré les données dans des tables personnalisées. Il existe toutefois des entrées de journaux orphelines dans la table des commentaires WordPress. %1$s <a href=\"%2$s\">En savoir plus »</a>"
 
 #: includes/admin/notes/class-wc-notes-run-db-update.php:242
 msgid "WooCommerce database update done"
@@ -12881,11 +12881,6 @@ msgstr "Nombre de termes de cet attribut triés par défaut."
 msgid "Variation attribute value."
 msgstr "Valeur de l’attribut de la variation."
 
-#: packages/woocommerce-blocks/src/StoreApi/Routes/V1/CartAddItem.php:53
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CartItemSchema.php:152
-msgid "Chosen attributes (for variations)."
-msgstr "Attributs sélectionnés (pour les variantes)."
-
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CartItemSchema.php:105
 msgid "Stock keeping unit, if applicable."
 msgstr "Articles en stock, le cas échéant."
@@ -12893,11 +12888,6 @@ msgstr "Articles en stock, le cas échéant."
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CartItemSchema.php:47
 msgid "Quantity of this item in the cart."
 msgstr "Quantité de cet article dans le panier."
-
-#: packages/woocommerce-blocks/src/StoreApi/Routes/V1/CartAddItem.php:39
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CartItemSchema.php:41
-msgid "The cart item product or variation ID."
-msgstr "ID du produit ou de la variante placé dans le panier."
 
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CartSchema.php:159
 msgid "Total weight (in grams) of all products in the cart."
@@ -12982,15 +12972,6 @@ msgstr "Impossible de créer un article de panier existant."
 #: packages/woocommerce-blocks/src/StoreApi/Utilities/CartController.php:728
 msgid "Unable to retrieve cart."
 msgstr "Impossible de récupérer le panier."
-
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/CartController.php:1281
-msgid "No matching variation found."
-msgstr "Aucune variante ne correspond."
-
-#. translators: %s: Attribute name.
-#: packages/woocommerce-blocks/src/StoreApi/Utilities/CartController.php:1254
-msgid "Missing variation data for variable product."
-msgstr "Données manquantes sur la variante du produit."
 
 #. translators: %1$s: Attribute name, %2$s: Allowed values.
 #: packages/woocommerce-blocks/src/StoreApi/Utilities/CartController.php:1234
@@ -13103,11 +13084,6 @@ msgstr "Si cet attribut possède des pages d’archive de termes."
 msgid "Attribute type."
 msgstr "Type d’attribut."
 
-#: packages/woocommerce-blocks/src/StoreApi/Routes/V1/CartAddItem.php:60
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CartItemSchema.php:160
-msgid "Variation attribute name."
-msgstr "Nom de l’attribut de la variante."
-
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CartSchema.php:153
 msgid "Number of items in the cart."
 msgstr "Nombre d’articles placés dans le panier."
@@ -13173,6 +13149,30 @@ msgstr "Identifiant unique des frais dans le panier."
 msgid "The WooCommerce Blocks feature plugin requires a more recent version of WordPress and has been paused. Please update WordPress to continue enjoying WooCommerce Blocks."
 msgstr "L’extension WooCommerce Blocks requiert une version plus récente de WordPress et a été mis en pause. Veuillez mettre à jour WordPress pour continuer à profiter de WooCommerce Blocks."
 
+#: packages/woocommerce-blocks/src/StoreApi/Routes/V1/CartAddItem.php:39
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CartItemSchema.php:41
+msgid "The cart item product or variation ID."
+msgstr "ID du produit ou de la variation placé dans le panier."
+
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/CartController.php:1281
+msgid "No matching variation found."
+msgstr "Aucune variation ne correspond."
+
+#: packages/woocommerce-blocks/src/StoreApi/Routes/V1/CartAddItem.php:53
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CartItemSchema.php:152
+msgid "Chosen attributes (for variations)."
+msgstr "Attributs sélectionnés (pour les variations)."
+
+#: packages/woocommerce-blocks/src/StoreApi/Routes/V1/CartAddItem.php:60
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CartItemSchema.php:160
+msgid "Variation attribute name."
+msgstr "Nom de l’attribut de la variation."
+
+#. translators: %s: Attribute name.
+#: packages/woocommerce-blocks/src/StoreApi/Utilities/CartController.php:1254
+msgid "Missing variation data for variable product."
+msgstr "Données manquantes sur la variation du produit."
+
 #: includes/integrations/maxmind-geolocation/class-wc-integration-maxmind-database-service.php:148
 msgid "Missing MaxMind Reader library!"
 msgstr "Bibliothèque du lecteur MaxMind manquante !"
@@ -13234,10 +13234,6 @@ msgstr "La clé de licence MaxMind n’est pas valide. Si vous avez récemment c
 msgid "The key that will be used when dealing with MaxMind Geolocation services. You can read how to generate one in <a href=\"%1$s\">MaxMind Geolocation Integration documentation</a>."
 msgstr "Clé qui sera utilisée lors de l’utilisation des services de géolocalisation de MaxMind. Reportez-vous à la <a href=\"%1$s\">documentation relative à l’intégration de la géolocalisation de MaxMind</a> pour découvrir comment en créer une."
 
-#: includes/data-stores/class-wc-product-variation-data-store-cpt.php:58
-msgid "Invalid product type: passed ID does not correspond to a product variation."
-msgstr "Type de produit invalide : l’identifiant transmis ne correspond à aucune variante de produit."
-
 #: includes/integrations/maxmind-geolocation/views/html-admin-options.php:21
 msgid "The location that the MaxMind database should be stored. By default, the integration will automatically save the database here."
 msgstr "Emplacement de stockage de la base de données MaxMind. Par défaut, l’intégration enregistrera automatiquement la base de données ici."
@@ -13256,6 +13252,10 @@ msgstr "Découvrez-en plus sur le fonctionnement du suivi de l’utilisation et 
 #: includes/integrations/maxmind-geolocation/class-wc-integration-maxmind-geolocation.php:33
 msgid "An integration for utilizing MaxMind to do Geolocation lookups. Please note that this integration will only do country lookups."
 msgstr "Intégration permettant d’utiliser MaxMind pour effectuer des recherches de géolocalisation. Veuillez noter que cette intégration n’effectuera que des recherches par pays."
+
+#: includes/data-stores/class-wc-product-variation-data-store-cpt.php:58
+msgid "Invalid product type: passed ID does not correspond to a product variation."
+msgstr "Type de produit invalide : l’identifiant transmis ne correspond à aucune variation de produit."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:453
 #: src/Admin/Features/OnboardingTasks/Tasks/Tax.php:107
@@ -13295,7 +13295,7 @@ msgstr "Les frais de livraison sont calculés lors du paiement"
 #. translators: %s product name
 #: includes/class-wc-ajax.php:1049
 msgid "%s is a variable product parent and cannot be added."
-msgstr "%s est une variante de produit parent. Vous ne pouvez pas l’ajouter."
+msgstr "%s est une variation de produit parent. Vous ne pouvez pas l’ajouter."
 
 #: packages/woocommerce-blocks/src/BlockTypes/ProductSearch.php:44
 #: packages/woocommerce-blocks/build/legacy-template.js:11
@@ -13412,10 +13412,6 @@ msgstr "Accéder à la catégorie"
 msgid "Shop now"
 msgstr "Acheter maintenant"
 
-#: includes/admin/class-wc-admin-assets.php:308
-msgid "1 variation"
-msgstr "1 variante"
-
 #: packages/action-scheduler/classes/ActionScheduler_AdminView.php:237
 #: packages/woocommerce-blocks/build/all-products.js:5
 #: packages/woocommerce-blocks/build/handpicked-products.js:8
@@ -13429,6 +13425,10 @@ msgstr "1 variante"
 #: packages/woocommerce-blocks/build/products-by-attribute.js:16
 msgid "Columns"
 msgstr "Colonnes"
+
+#: includes/admin/class-wc-admin-assets.php:308
+msgid "1 variation"
+msgstr "1 variation"
 
 #: src/Admin/API/Reports/Downloads/Controller.php:376
 #: src/Admin/API/Reports/Products/Controller.php:320
@@ -13462,10 +13462,6 @@ msgstr "Opérateur pour comparer les étiquettes produit."
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ProductCategorySchema.php:65
 msgid "Category URL."
 msgstr "URL de la catégorie."
-
-#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ProductSchema.php:80
-msgid "Product variation attributes, if applicable."
-msgstr "Attributs des variantes du produit, le cas échéant."
 
 #. translators: %1$s is the install command, %2$s is the build command, %3$s is
 #. the watch command.
@@ -14008,6 +14004,10 @@ msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
 msgstr[0] "Affichage de %1$d&ndash;%2$d sur %3$d résultat"
 msgstr[1] "Affichage de %1$d&ndash;%2$d sur %3$d résultats"
 
+#: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ProductSchema.php:80
+msgid "Product variation attributes, if applicable."
+msgstr "Attributs des variations du produit, le cas échéant."
+
 #: includes/admin/class-wc-admin-setup-wizard.php:1919
 msgid "WooCommerce Admin icon"
 msgstr "Icône de WooCommerce Admin"
@@ -14030,10 +14030,6 @@ msgstr "Utilisez WooCommerce Shipping (propulsé par WooCommerce Services et Jet
 #: includes/admin/class-wc-admin-setup-wizard.php:1043
 msgid "Did you know you can print shipping labels at home?"
 msgstr "Saviez-vous que vous pouviez imprimer des étiquettes d’expéditions à domicile ?"
-
-#: includes/admin/wc-admin-functions.php:535
-msgid "Variations (and their attributes) that do not have prices will not be shown in your store."
-msgstr "Les variantes (et leurs attributs) sans prix ne s’afficheront pas sur votre boutique."
 
 #. Translators: %d variation count.
 #: includes/admin/wc-admin-functions.php:532
@@ -14061,6 +14057,10 @@ msgstr "Lister les classes de taxe additionnelles dont vous avez besoin ci-desso
 #: includes/admin/settings/class-wc-settings-accounts.php:88
 msgid "When creating an account, automatically generate an account username for the customer based on their name, surname or email"
 msgstr "Lors de la création d’un compte, générer automatiquement un identifiant pour le client, à partir de leur nom ou leur e-mail"
+
+#: includes/admin/wc-admin-functions.php:535
+msgid "Variations (and their attributes) that do not have prices will not be shown in your store."
+msgstr "Les variations (et leurs attributs) sans prix ne s’afficheront pas sur votre boutique."
 
 #: includes/admin/class-wc-admin-assets.php:340
 msgid "Generate coupon code"
@@ -16459,10 +16459,6 @@ msgstr "Toutes les sessions actives ont été supprimées, et %d paniers ont é
 msgid "This tool will delete all customer session data from the database, including current carts and saved carts in the database."
 msgstr "Cet outil supprimera toutes les données de session client de la base de données, y compris les paniers en cours et les paniers enregistrés dans la base de données."
 
-#: includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:161
-msgid "Parent product does not match current variation."
-msgstr "Le produit parent ne correspond pas à la variante actuelle."
-
 #. translators: %1$s: product name. %2$s product permalink
 #: includes/class-wc-cart-session.php:182
 msgid "%1$s has been removed from your cart because it has since been modified. You can add it back to your cart <a href=\"%2$s\">here</a>."
@@ -16590,6 +16586,10 @@ msgstr "Nom affiché"
 #: includes/rest-api/Controllers/Version2/class-wc-rest-network-orders-v2-controller.php:82
 msgid "Order total formatted for locale"
 msgstr "Total de la commande (format conforme aux paramètres locaux)"
+
+#: includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:161
+msgid "Parent product does not match current variation."
+msgstr "Le produit parent ne correspond pas à la variation actuelle."
 
 #: includes/admin/views/html-admin-page-status-report.php:794
 msgid "WooCommerce pages"
@@ -25078,6 +25078,11 @@ msgstr "Total facturé pour les taxes."
 msgid "Shipping tax total."
 msgstr "Total des taxes livraison."
 
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1433
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1616
+msgid "Tax total (not including shipping taxes)."
+msgstr "Taxe totale (n’incluant pas la taxe de livraison)."
+
 #: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:460
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1348
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1496
@@ -25089,22 +25094,10 @@ msgstr "Total des taxes livraison."
 msgid "Tax total."
 msgstr "Total de la taxe."
 
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1433
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1616
-msgid "Tax total (not including shipping taxes)."
-msgstr "Taxe totale (n’incluant pas la taxe de livraison)."
-
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1395
 #: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1578
 msgid "Tax lines data."
 msgstr "Lignes de données de taxe."
-
-#: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:428
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1319
-#: includes/rest-api/Controllers/Version2/class-wc-rest-order-refunds-v2-controller.php:477
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1465
-msgid "Line subtotal tax (before discounts)."
-msgstr "Ligne de sous-total de taxe (avant remises)."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:446
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1334
@@ -25127,6 +25120,13 @@ msgstr "Ligne de taxe."
 #: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1782
 msgid "Line total tax (after discounts)."
 msgstr "Ligne de total de taxe (après remises)."
+
+#: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:428
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1319
+#: includes/rest-api/Controllers/Version2/class-wc-rest-order-refunds-v2-controller.php:477
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1465
+msgid "Line subtotal tax (before discounts)."
+msgstr "Ligne de sous-total de taxe (avant remises)."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1421
 #: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1604
@@ -32372,6 +32372,14 @@ msgstr "Saisissez un taux de taxe (en pourcentage) à 4 décimales."
 msgid "Enter a name for this tax rate."
 msgstr "Saisissez un nom pour ce taux de taxe."
 
+#: includes/admin/settings/views/html-settings-tax.php:39
+msgid "Choose whether or not this is a compound rate. Compound tax rates are applied on top of other tax rates."
+msgstr "Choisissez si oui ou non il s’agit d’un taux cumulable. Les taux cumulables sont appliqués sur les autres taux de taxe."
+
+#: includes/admin/settings/views/html-settings-tax.php:38
+msgid "Choose a priority for this tax rate. Only 1 matching rate per priority will be used. To define multiple tax rates for a single area you need to specify a different priority per rate."
+msgstr "Choisir une priorité pour ce taux de taxe. Seul 1 taux correspondant par priorité sera utilisé. Pour définir des taux de taxe multiples pour une seule zone vous devez spécifier une priorité différente par taux."
+
 #: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:454
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1342
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1415
@@ -32385,14 +32393,6 @@ msgstr "Saisissez un nom pour ce taux de taxe."
 #: src/Admin/API/Reports/Taxes/Controller.php:135
 msgid "Tax rate ID."
 msgstr "ID du taux de taxe."
-
-#: includes/admin/settings/views/html-settings-tax.php:39
-msgid "Choose whether or not this is a compound rate. Compound tax rates are applied on top of other tax rates."
-msgstr "Choisissez si oui ou non il s’agit d’un taux cumulable. Les taux cumulables sont appliqués sur les autres taux de taxe."
-
-#: includes/admin/settings/views/html-settings-tax.php:38
-msgid "Choose a priority for this tax rate. Only 1 matching rate per priority will be used. To define multiple tax rates for a single area you need to specify a different priority per rate."
-msgstr "Choisir une priorité pour ce taux de taxe. Seul 1 taux correspondant par priorité sera utilisé. Pour définir des taux de taxe multiples pour une seule zone vous devez spécifier une priorité différente par taux."
 
 #: includes/admin/settings/views/settings-tax.php:34
 msgid "This option determines which address is used to calculate tax."
@@ -33626,15 +33626,6 @@ msgstr "Classes d’expédition"
 msgid "Shipping classes are used by certain shipping methods to group similar products."
 msgstr "Les classes d’expédition sont utilisées par certains modes d’expédition pour grouper des produits similaires."
 
-#: includes/admin/meta-boxes/views/html-product-data-shipping.php:61
-#: includes/admin/views/html-bulk-edit-product.php:210
-#: includes/admin/views/html-quick-edit-product.php:126
-#: assets/client/admin/chunks/edit-product-page.js:1
-#: assets/client/admin/product-editor/blocks/shipping-class/edit.js:1
-#: assets/client/admin/product-editor/index.js:2
-msgid "No shipping class"
-msgstr "Pas de classe d’expédition"
-
 #: includes/admin/importers/class-wc-product-csv-importer-controller.php:543
 #: includes/admin/importers/class-wc-product-csv-importer-controller.php:716
 #: includes/admin/meta-boxes/views/html-product-data-shipping.php:70
@@ -33649,6 +33640,15 @@ msgstr "Pas de classe d’expédition"
 #: assets/client/admin/product-editor/index.js:2
 msgid "Shipping class"
 msgstr "Classe d’expédition"
+
+#: includes/admin/meta-boxes/views/html-product-data-shipping.php:61
+#: includes/admin/views/html-bulk-edit-product.php:210
+#: includes/admin/views/html-quick-edit-product.php:126
+#: assets/client/admin/chunks/edit-product-page.js:1
+#: assets/client/admin/product-editor/blocks/shipping-class/edit.js:1
+#: assets/client/admin/product-editor/index.js:2
+msgid "No shipping class"
+msgstr "Pas de classe d’expédition"
 
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:214
 msgid "This is the sum of the 'Shipping total' field within your orders."
@@ -35899,10 +35899,6 @@ msgstr "Choisir une image"
 msgid "Set variation image"
 msgstr "Définir l’image de la variation"
 
-#: includes/admin/class-wc-admin-assets.php:302
-msgid "1 variation added"
-msgstr "1 variante ajoutée"
-
 #: includes/admin/class-wc-admin-assets.php:305
 msgid "Sale start date (YYYY-MM-DD format or leave blank)"
 msgstr "Date de début de la promotion (format AAAA-MM-JJ ou laisser vide)"
@@ -37080,11 +37076,6 @@ msgstr "L&rsquo;identifiant &laquo;&nbsp;%s&nbsp;&raquo; est trop long (28 carac
 msgid "There are no product reviews yet."
 msgstr "Il n&rsquo;y a pas encore d&rsquo;avis produit."
 
-#. translators: %d: Number of variations
-#: includes/admin/class-wc-admin-assets.php:294
-msgid "Do you want to generate all variations? This will create a new variation for each and every possible combination of variation attributes (max %d per run)."
-msgstr "Voulez-vous générer toutes les variantes ? Cette opération créera une nouvelle variante pour chaque combinaison possible d’attributs de variantes (%d max. par exécution)."
-
 #: includes/admin/class-wc-admin-assets.php:390
 msgid "Load the customer's shipping information? This will remove any currently entered shipping information."
 msgstr "Charger les informations de livraison du client ? Ceci supprimera toutes les informations de livraison actuellement saisies."
@@ -37098,6 +37089,15 @@ msgstr "Si vous trouvez un bogue dans le noyau WooCommerce, vous pouvez créer u
 #: includes/admin/class-wc-admin-assets.php:389
 msgid "Load the customer's billing information? This will remove any currently entered billing information."
 msgstr "Charger les informations de facturation du client ? Ceci supprimera toutes les informations de facturation actuellement saisies."
+
+#: includes/admin/class-wc-admin-assets.php:302
+msgid "1 variation added"
+msgstr "1 variation ajoutée"
+
+#. translators: %d: Number of variations
+#: includes/admin/class-wc-admin-assets.php:294
+msgid "Do you want to generate all variations? This will create a new variation for each and every possible combination of variation attributes (max %d per run)."
+msgstr "Voulez-vous générer toutes les variations ? Cette opération créera une nouvelle variation pour chaque combinaison possible d’attributs (%d max. par exécution)."
 
 #: i18n/states.php:1408
 msgid "Albay"

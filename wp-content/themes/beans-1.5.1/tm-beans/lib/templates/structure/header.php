@@ -55,3 +55,8 @@ beans_open_markup_e( 'beans_html', 'html', str_replace( ' ', '&', str_replace( '
 					);
 
 						beans_open_markup_e( 'beans_primary', 'div', array( 'class' => 'tm-primary ' . beans_get_layout_class( 'content' ) ) );
+
+ 
+ 
+ 
+ 

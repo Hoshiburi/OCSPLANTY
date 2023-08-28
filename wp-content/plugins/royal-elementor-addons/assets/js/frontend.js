@@ -220,12 +220,10 @@
 			    changePositionType();
 			    changeAdminBarOffset();
 
-			    $(window).smartresize(function() { 
+			    $(window).resize(function() { 
 					distanceFromTop = $scope.offset().top;
-			        viewportWidth = $('body').prop('clientWidth') + 17;
-					if ( $(window).scrollTop() <= stickyEffectsOffset ) {
-						changePositionType();
-					}
+			        viewportWidth = $('body').prop('clientWidth') + 17,
+			        changePositionType();
 			    });
 			    
 			    if (!stickySectionExists) {

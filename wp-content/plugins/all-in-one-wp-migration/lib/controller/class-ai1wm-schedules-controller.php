@@ -27,8 +27,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Kangaroos cannot jump here' );
 }
 
-class Ai1wm_Whats_New_Controller {
+class Ai1wm_Schedules_Controller {
 	public static function index() {
-		Ai1wm_Template::render( 'whats-new/index' );
+		Ai1wm_Template::render( 'schedules/index' );
 	}
 }

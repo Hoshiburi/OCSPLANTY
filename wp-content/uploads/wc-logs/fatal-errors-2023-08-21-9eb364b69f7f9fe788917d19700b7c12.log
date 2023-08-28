@@ -1,0 +1,4 @@
+2023-08-21T14:16:49+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans C:\MAMP\htdocs\OCSPlanty\wp-includes\widgets\class-wp-widget-categories.php à la ligne 208
+
+2023-08-21T14:46:30+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans C:\MAMP\htdocs\OCSPlanty\wp-content\plugins\contact-form-7\modules\disallowed-list.php à la ligne 3
+

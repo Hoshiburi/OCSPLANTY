@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
 body * {
-   font-family: 'Syne', sans-serif;
+   font-family: 'Syne', sans-serif !important;
+   /*
+   margin: 0 auto; 
+   width: 100%;
+   max-width: 1440px;
+   */
 }
 
 h4 {
    font-size: 20px;
-   font-weight: 400;
+   font-weight: 400 !important;
    line-height: 24px;
    letter-spacing: 0em;
    text-align: center;
@@ -15,25 +20,22 @@ h4 {
 
 h1 {
    font-size: 38px;
-   font-weight: 800;
+   font-weight: 800 !important;
    line-height: 46px;
-   letter-spacing: 0em;
    text-align: center;
 }
 
 h2 {
-   font-family: Syne;
    font-size: 30px;
-   font-weight: 800;
+   font-weight: 800 !important;
    line-height: 36px;
    letter-spacing: 0em;
    text-align: center; 
 }
 
-h3{
-   font-family: Syne;
+h3 {
    font-size: 30px;
-   font-weight: 700;
+   font-weight: 700 !important;
    line-height: 36px;
    letter-spacing: 0em;
    text-align: center; 
@@ -44,20 +46,72 @@ a:hover, a {
 }
 
 
+/* HEADER */
+.header {
+   height: 80px;
+   background-color: #FFFFFF;
+   display: flex;
+   justify-content: space-between;
+}
+
+#logo {
+   width: 201px;
+   height: 19px;
+   margin-top: 31px;
+   margin-left: 37px;
+}
+
+.menu_nav ul.main-menu {
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 19px;
+   margin-top: 31px;
+}
+
+.menu_nav ul.main-menu li {
+   margin-left: 60px;
+}
+
+.menu_nav ul.main-menu :hover {
+   text-decoration: none;
+}
+
+.menu_nav ul.main-menu #menu-item-1442 a {
+   background-color: #DC9F96;
+   padding: 30px 61px 30px 61px;
+   color: white !important; 
+   text-align: center;
+}
+
+.menu_nav ul.main-menu #menu-item-1442 a:hover {
+   background-color: #c02e44;
+}
+
+.admin-button {
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 19px;
+}
+
+
+/* FOOTER */
+#site-footer {
+   text-align: center;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 19px;
+   padding: 20px 0px 20px 0px;
+   background-color: #FFFFFF;
+}
+
 /* ACCUEIL */
-
-
-
 
 /* NOUS RENCONTRER */
 
-
-
-
-
 /* PAGE COMMANDER */
-
-/* qtity products */
 
 .quantity-btn-plus{
    font-family: Syne;
@@ -82,9 +136,9 @@ a:hover, a {
    width: 31px;
    height: 28px;
    border-bottom-right-radius: 7px;
-   border:0;
+   border: 0;
    color: white; 
-   }
+}
    
 .quantity-input {
    font-family: Syne;
@@ -145,7 +199,7 @@ a:hover, a {
    .quantity-btn-less{
        width: 20px;
    }
-   }
+}
    
 @media screen and (max-width: 470px) and (min-width: 456px) {
    .quantity-input {
@@ -160,8 +214,7 @@ a:hover, a {
      flex-direction: column;
      align-items: center;
    }
-   }
-
+}
 
 
 /* formulaire */
@@ -210,16 +263,12 @@ a:hover, a {
 .submit_button{
    width: 198px;
    height: 55px;
-   top: 1164px;
-   left: 631px;
    padding: 9px 57px 9px 56px;
    border-radius: 5px;
    background-color: #E0B9B4;
-   font-family: Syne;
    font-size: 15px;
    font-weight: 400;
    line-height: 37px;
-   
    text-align: center;
    color: white;
    border: 0;
@@ -232,19 +281,23 @@ a:hover, a {
    cursor: pointer;
 }
 
-   /*
 @media (max-width: 1000px) and (min-width: 320px) {
-     .text-area {
-       width: 300px;
-     }
+   .text-area {
+       width: 200px;
    }
+   .separator {
+      display: none;
+   }
+}
    
 @media screen and (min-width: 1000px) and (max-width: 1270px) {
-     .text-area {
+   .text-area {
        width: 300px;
      }
-
-/*Header*/
+   .separator {
+      display: none;
+   }
+}
 
 
 

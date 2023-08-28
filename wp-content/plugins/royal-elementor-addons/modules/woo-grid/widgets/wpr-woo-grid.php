@@ -8306,12 +8306,7 @@ class Wpr_Woo_Grid extends Widget_Base {
 			$settings[ 'query_offset' ] = 0;
 		}
 		
-		$query_posts_per_page = $settings['query_posts_per_page'];
-		if ( empty($query_posts_per_page) ) {
-			$query_posts_per_page = -1;
-		}
-		
-		$offset = ( $paged - 1 ) * $query_posts_per_page + $settings[ 'query_offset' ];
+		$offset = ( $paged - 1 ) * $settings['query_posts_per_page'] + $settings[ 'query_offset' ];
 
 		// Dynamic
 		$args = [
@@ -9099,7 +9094,9 @@ class Wpr_Woo_Grid extends Widget_Base {
 			\Elementor\Icons_Manager::render_icon($settings['element_extra_icon'], ['aria-hidden' => 'true']);
 			$extra_icon = ob_get_clean();
 
-			$button_HTML .= '<span class="wpr-grid-extra-icon-left">'. $extra_icon .'</span>';
+			echo '<span class="wpr-grid-extra-icon-left">';
+				echo $extra_icon;
+			echo '</span>';
 		}
 
 		// Button Text
@@ -9128,7 +9125,9 @@ class Wpr_Woo_Grid extends Widget_Base {
 			\Elementor\Icons_Manager::render_icon($settings['element_extra_icon'], ['aria-hidden' => 'true']);
 			$extra_icon = ob_get_clean();
 
-			$button_HTML .= '<span class="wpr-grid-extra-icon-right">'. $extra_icon .'</span>';
+			echo '<span class="wpr-grid-extra-icon-right">';
+				echo $extra_icon;
+			echo '</span>';
 		}
 
 		echo '<div class="'. esc_attr($class) .'">';
