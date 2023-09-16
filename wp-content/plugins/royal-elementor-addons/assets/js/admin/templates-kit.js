@@ -25,7 +25,7 @@ jQuery(document).ready(function( $ ) {
 					return false;
 				}
 
-				var confirmImport = confirm('For the best results, it is recommended to temporarily deactivate All other Active plugins Except Elementor and Royal Elementor Addons.\n\nElementor Header, Footer, Pages, Media Files, Menus and some required plugins will be installed on your website.');
+				var confirmImport = confirm('For the best results, it is recommended to temporarily deactivate All other Active plugins Except Elementor and Royal Elementor Addons.\n\nElementor Header, Footer, Pages, Media Files, Menus and some required plugins will be installed on your website.\n\nNone of your Data will be deleted and you can always Restore your Website back.\n\nIf you have a large Website with important data, it is highly advisable to create a Backup before proceeding with the KIT import.');
 				
 				if ( confirmImport ) {
 					WprTemplatesKit.importTemplatesKit( $(this).attr('data-kit-id') );

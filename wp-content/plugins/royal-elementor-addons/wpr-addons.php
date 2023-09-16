@@ -4,7 +4,7 @@
  * Description: The only plugin you need for Elementor page builder.
  * Plugin URI: https://royal-elementor-addons.com/
  * Author: WP Royal
- * Version: 1.3.76
+ * Version: 1.3.77
  * License: GPLv3
  * Author URI: https://royal-elementor-addons.com/
  * Elementor tested up to: 5.0
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'WPR_ADDONS_VERSION', '1.3.76' );
+define( 'WPR_ADDONS_VERSION', '1.3.77' );
 
 define( 'WPR_ADDONS__FILE__', __FILE__ );
 define( 'WPR_ADDONS_PLUGIN_BASE', plugin_basename( WPR_ADDONS__FILE__ ) );
@@ -30,15 +30,13 @@ define( 'WPR_ADDONS_MODULES_URL', WPR_ADDONS_URL . 'modules/' );
 /**
  * Feemius Integration
  */
-if ( ! function_exists( 'wpr_fs' ) ) {
+if ( function_exists( 'wpr_fs' ) ) {
+    wpr_fs()->set_basename( false, __FILE__ );
+} else {
 	$register_freemius = true;
 
-	if ( is_admin() ) {
-		include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-
-		if ( is_plugin_active('wpr-addons-pro/wpr-addons-pro.php') ) {
-			$register_freemius = false;
-		}
+	if ( get_option('royal_elementor_addons_pro_activation_time') ) {
+		$register_freemius = false;
 	}
 
 	if ( $register_freemius ) {
@@ -80,6 +78,7 @@ if ( ! function_exists( 'wpr_fs' ) ) {
 	    do_action( 'wpr_fs_loaded' );
 
 	    wpr_fs()->add_filter( 'show_deactivation_subscription_cancellation', '__return_false' );
+        wpr_fs()->add_filter( 'deactivate_on_activation', '__return_false' );
 
 		function disable_contact_for_free_users( $is_visible, $menu_id ) {
 

@@ -1,7 +1,7 @@
 === Royal Elementor Addons and Templates ===
 Contributors: WP Royal, rubeushagrid13, cyberpinky, elementoraddonswpr, ggedenidze1982, wprduke
 Tags: elementor, elementor templates, elementor addons, widgets for elementor, elementor widgets, elementor mega menu, elementor woocommerce builder, theme builder, header footer builder, elementor post grid, elementor product grid, addons for elementor
-Stable tag: 1.3.76
+Stable tag: 1.3.77
 Requires at least: 5.0
 Tested up to: 6.3.1
 Requires PHP: 5.6
@@ -189,6 +189,7 @@ and other custom branding related settings)
 - [**Car Repair**](https://demosites.royal-elementor-addons.com/car-repair-v1/?ref=rea-wpo-pp-details-tab)
 - [**Business Landing Page**](https://demosites.royal-elementor-addons.com/landing-page-business-v1/?ref=rea-wpo-pp-details-tab)
 - [**Mobile App Landing Page**](https://demosites.royal-elementor-addons.com/landing-page-mobileapp-v1/?ref=rea-wpo-pp-details-tab)
+- [**Investment Landing Page**](https://demosites.royal-elementor-addons.com/landing-page-investment-platform-v1/?ref=rea-wpo-pp-details-tab)
 - [**Digital Product Landing Page**](https://demosites.royal-elementor-addons.com/landing-page-digital-product-v1/?ref=rea-wpo-pp-details-tab)
 - [**Saas Landing Page**](https://demosites.royal-elementor-addons.com/landing-page-saas-v1/?ref=rea-wpo-pp-details-tab)
 - [**Startup Landing Page**](https://demosites.royal-elementor-addons.com/landing-page-startup-v1/?ref=rea-wpo-pp-details-tab)
@@ -197,10 +198,12 @@ and other custom branding related settings)
 - [**Fintech**](https://demosites.royal-elementor-addons.com/fintech-v1/?ref=rea-wpo-pp-details-tab)
 - [**Portfolio v2**](https://demosites.royal-elementor-addons.com/portfolio-v2/?ref=rea-wpo-pp-details-tab)
 - [**Hotel v1**](https://demosites.royal-elementor-addons.com/hotel-v1/?ref=rea-wpo-pp-details-tab)
+- [**Nature - Travel v2**](https://demosites.royal-elementor-addons.com/nature-v2/?ref=rea-wpo-pp-details-tab)
 - [**Yoga**](https://demosites.royal-elementor-addons.com/yoga-v1/?ref=rea-wpo-pp-details-tab)
 - [**Digital Seo Marketing Agency v1**](https://demosites.royal-elementor-addons.com/digital-seo-marketing-agency-v1/?ref=rea-wpo-pp-details-tab)
 - [**Digital Seo Marketing Agency v2**](https://demosites.royal-elementor-addons.com/digital-seo-marketing-agency-v2/?ref=rea-wpo-pp-details-tab)
 - [**Real Estate v2**](https://demosites.royal-elementor-addons.com/realestate-v2/?ref=rea-wpo-pp-details-tab)
+- [**Real Estate Agency v3**](https://demosites.royal-elementor-addons.com/realestate-v3/?ref=rea-wpo-pp-details-tab)
 - [**Digital Marketing Agency v3**](https://demosites.royal-elementor-addons.com/digital-marketing-agency-v3/?ref=rea-wpo-pp-details-tab)
 - [**Digital Marketing Agency v2**](https://demosites.royal-elementor-addons.com/digital-marketing-agency-v2/?ref=rea-wpo-pp-details-tab)
 - [**Digital Agency Dark**](https://demosites.royal-elementor-addons.com/digital-agency-dark-v1/?ref=rea-wpo-pp-details-tab)
@@ -422,6 +425,15 @@ memory_limit 256M or more
 post_max_size 64M
 
 == Changelog ==
+= Royal Elementor Addons v1.3.77 - 2023-09-06 =
+* ADDED: Real Estate Agency Elementor Templates Kit - [**Real Estate Agency Kit**](https://demosites.royal-elementor-addons.com/realestate-v3/?ref=rea-wpo-pp-details-tab).
+* ADDED: Nature - Travel (for beginners) Elementor Templates Kit - [**Nature - Travel**](https://demosites.royal-elementor-addons.com/nature-v2/ref=rea-wpo-pp-details-tab).
+* ADDED: Investment Landing Page - Elementor Templates Kit - [**Investment Landing Page**](https://demosites.royal-elementor-addons.com/landing-page-investment-platform-v1/ref=rea-wpo-pp-details-tab).
+* ADDED: Startup Landing Page - Elementor Templates Kit - [**Startup Landing Page**](https://demosites.royal-elementor-addons.com/landing-page-startup-v1/ref=rea-wpo-pp-details-tab).
+* ADDED: SAAS  Landing Page - Elementor Templates Kit - [**SAAS Landing Page**](https://demosites.royal-elementor-addons.com/landing-page-saas-v1/ref=rea-wpo-pp-details-tab).
+* ADDED: Ebook Landing Page - Elementor Templates Kit - [**Ebook Landing Page**](https://demosites.royal-elementor-addons.com/landing-page-ebook-v1/ref=rea-wpo-pp-details-tab).
+* FIXED: Minor Bugs.
+
 = Royal Elementor Addons v1.3.76 - 2023-08-30 =
 * ADDED: Digital SEO Marketing Agency Elementor Templates Kit - [**Digital SEO Marketing Agency**](https://demosites.royal-elementor-addons.com/digital-seo-marketing-agency-v2/?ref=rea-wpo-pp-details-tab).
 * FIXED: Minor Bugs.
