@@ -9,7 +9,7 @@
   <header class="header">
     <div id="logo">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-	  	<img src="<?php echo get_site_url() . '/wp-content/themes/beans-1.5.1/OSCPlanty/images/Logo.png'; ?>" alt="Logo">
+	  	<img src="<?php echo get_site_url() . '/wp-content/themes//OSCPlanty/images/Logo.png'; ?>" alt="Logo">
       </a>
     </div>
     <nav class="menu_nav">
